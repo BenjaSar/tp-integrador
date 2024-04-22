@@ -1,4 +1,4 @@
-![header](doc/LogoHeader.png)
+![header](doc/imgs/LogoHeader.png)
 #### Author
 Sabrina Lucero <br>
 Nicolas Mazziattelo <br>
@@ -11,8 +11,15 @@ Juan Camilo Molina <br>
 Este proyecto es una plataforma web para la gestión de una empresa de consultoría. 
 
 ## Características
+- Presentación de proyectos
+- Presentación de tecnologías
 
-## TEcnologías utilizadas
+
+## Tecnologías utilizadas
+- Frontend: HTML, CSS, Javascript
+- Otras herramientas utilizadas: Git, Github, VSCode
+
+
 
 ## Instalación 
 
@@ -24,4 +31,4 @@ Este proyecto es una plataforma web para la gestión de una empresa de consultor
 MIT License
 
 
-![footer](doc/LogoFooter.png)
+![footer](doc/imgs/LogoFooter.png)
