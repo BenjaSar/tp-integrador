@@ -23,7 +23,7 @@ Este proyecto es una plataforma web para la gestión de una empresa de consultor
 
 ## Instalación 
 
-## Constribución
+## Contribución
 
 
 ### Licencia 
