@@ -1,7 +1,7 @@
 ![header](doc/imgs/LogoHeader.png)
 #### Author
 Sabrina Lucero <br>
-Nicolas Mazziattelo <br>
+Nicolas Mazzitello <br>
 Juan Camilo Molina <br>
 2024
 
