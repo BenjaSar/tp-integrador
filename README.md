@@ -15,12 +15,9 @@ Este proyecto es una plataforma web para la gestión de una empresa de consultor
 - Presentación de proyectos
 - Presentación de tecnologías
 
-
 ## Tecnologías utilizadas
 - Frontend: HTML, CSS, Javascript
 - Otras herramientas utilizadas: Git, Github, VSCode
-
-
 
 ## Instalación 
 

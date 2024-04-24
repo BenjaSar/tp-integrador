@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #424441;
+}
+
+h3{
+    color: #f3f3f3;
+    font-size: 24px;
+    padding-top: 124px;
+}
+
+.servicios{
+    height: 1100px;
+    background-image: url("../sources/serviciosBckg.png");
+    background-size: 100% auto;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 5vw;
+}
+
+.card{
+    width: 30vw;
+    height: 250px;
+    margin: 0 75px 65px;
+    border-radius: 5px;
+    text-align: center;
+}
+    .card img{
+        margin-top: 28px;
+    }
+    .card h5{
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .card p{
+        font-size: 14px;
+        margin-top: 37px;
+        padding: 0 20px;
+    }
+
+.card-white{
+    background-color: #f3f3f3;
+    color: #202020;
+}
+
+.card-black{
+    background-color: #202020;
+    color: #f3f3f3;
+}
+
+@media (max-width: 1100px){
+    .card{
+        width: 30vw;
+        height: 250px;
+        margin: 0 20px 65px;
+    }
+    .servicios{
+        background-size: cover;
+    }
+}
+
+@media (max-width: 650px) {
+    h3{
+        font-size: 20px;
+    }
+    .servicios{
+        background: none;
+    }
+    .cardContainer{
+        flex-direction: column;
+        padding: 0;
+    }
+    .card{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        border-radius: 0;
+    }
+    .card:nth-child(3) {
+        order: 3; 
+    }
+    .card:nth-child(4) {
+        order: 3;
+    }
+}
