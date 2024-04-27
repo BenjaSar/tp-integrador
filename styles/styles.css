@@ -56,8 +56,31 @@ body {
 h3{
     color: #f3f3f3;
     font-size: 24px;
-    padding-top: 124px;
+    margin-bottom: 50px;
+    /* padding-top: 124px; */
 }
+
+.nosotros{
+    height: 570px;
+    padding: 80px ;
+}
+
+.aboutContainer{
+    display: flex;
+    align-items: center;
+}
+    .aboutContainer img{
+        height: 330px;
+        width: 40vw;
+        margin: 0 80px;
+        border-radius: 10px;
+    }
+    .aboutContainer p{
+        font-size: 1.3vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
 .servicios{
     height: 1100px;
