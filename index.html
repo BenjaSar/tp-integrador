@@ -26,7 +26,13 @@
 
     <!-- <main> -->
         <section class="nosotros">
-            <h3>QUIENES SOMOS</h3>
+
+            <div class="containerH3">
+                <div class="linea"></div>
+                    <h3>NOSOTROS</h3>
+                <div class="linea2"></div>
+            </div>
+            
 
             <div class="aboutContainer">
                 <img src="/sources/nosotros.png">
@@ -48,7 +54,11 @@
         </section>
     
         <section class="servicios">
-            <h3>SERVICIOS</h3>
+            <div class="containerH3">
+                <div class="linea"></div>
+                    <h3>SERVICIOS</h3>
+                <div class="linea2"></div>
+            </div>
     
             <div class="cardContainer">
                 <div class="card card-white">
@@ -94,34 +104,53 @@
         </section>
         
         <section class="contacto">
-            <h3> Contacto </h3>
-            <div class="cardContainer">
-                <div class="card card-white">
-                    <h5>Cuentános sobre tus necesidades</h5>
+            <div class="containerH3">
+                <div class="linea"></div>
+                    <h3>CONTACTO</h3>
+                <div class="linea2"></div>
+            </div>
+
+            <div class="contactCardContainer">
+                <div class="contactCard">
+                    <p>Cuentános sobre <span>TUS</span> necesidades</p>
+                    <p>Un especialista a su disposición</p>
+                    <div class="phoneContainer">
+                        <img src="sources/phone.png" alt="iconoPhone">
+                        <p>(+54) 911-6677-8899</p>
+                    </div>
                 </div>
-                <div class="cardContainer">
+
+                <div>
                     <form>
-                        <label for="nombreapellido">
-                            Nombre y Apellido
-                        </label>
-                        <input type="text" id="nombreapellido" class="inputpadron" required
-                               placeholder="Nombre y Apellido">
-                        <label for="Asunto">
-                            Asunto
-                        </label>
-                        <input type="text" id="asunto" class="inputpadron" required
-                               placeholder="Razón o interés de comunicarnos">
-                        <label for="correoelectronico"> Correo electrónico</label>
-                        <input type="email" id="correoelectronico" class="inputpadron" required
-                               placeholder="email@dominio.com">
-        
-                        <label for="telefono"> Teléfono </label>
-                        <input type="tel" id="telefono" class="inputpadron" required
-                               placeholder="(XX) XX XXXXXX ">
-        
-                        <label for="mensaje"> Mensaje</label>
-                        <textarea cols="70" row="10" id="mensaje" class="inputpadron" required></textarea>
+                        <div class="inputsContainer">
+                           <div>
+                                <label for="nombreapellido">Apellido-nombre/Empresa:</label>
+                                <input type="text" 
+                                        id="nombreapellido" 
+                                        class="inputpadron" 
+                                        placeholder="Ingrese su nombre y apellido"
+                                        required>
+                           </div>
+
+                            <div>
+                                <label for="correoelectronico"> Correo electrónico:</label>
+                                <input type="email" 
+                                        id="correoelectronico" 
+                                        class="inputpadron" 
+                                        placeholder="email@dominio.com"
+                                        required>
+                            </div>
+
+                            <div>
+                                <label for="mensaje"> Mensaje:</label>
+                                <textarea cols="70" row="10" id="mensaje" class="inputpadron" required></textarea>
+                            </div>
+                        </div>
+                        <input class="submit" type="submit" value="ENVIAR" id="enviar">
+                    </form>
+                            
                         <fieldset>
+                        
                             <legend> ¿Como te gustaría que te contactaramos?</legend>
         
                             <label for="radioemail">
@@ -151,15 +180,16 @@
                                 <option> Noche </option>
                             </select>
                         </fieldset>
-                        <input class="submit" type="submit" value="Enviar" id="enviar">
-                    </form>
+                       
+                    
                 </div>
+
             </div> 
         </section>
     <!-- </main> -->
     <!--FOOTER SECTION-->
     <!--TODO: Agregar logo y footer de redes sociales-->
-    <footer class="footer__container">
+    <!-- <footer class="footer__container">
         <section class="logo">
             <h2>Logo</h2>
         </section>
@@ -207,10 +237,12 @@
         </div>
         
         </section>
-    </footer>
-    <p class="copyright">
-        &copy Copyright Grupo 2 - FRONT END NODE JS  -  2024
-    </p>
+    </footer> -->
+
+    <section class="copyright">
+        <p> &copy Copyright Grupo 2 - FRONT END NODE JS - 2024</p>
+    </section>
+    
     <link src="main.js">
 </body>
 
