@@ -39,7 +39,8 @@
     <section class="heroContainer"> 
         <div class="heroName">
             <img src="/doc/imgs/logo.png" alt="logo"> 
-            <h1>Innovatech Solutions </h1>
+            <h1>Innovatech <br/> 
+                Solutions </h1>
         </div>
         <p>Convertimos ideas en soluciones digitales excepcionales, 
             fusionando innovación y funcionalidad para crear software 
@@ -54,7 +55,6 @@
             <div class="linea2"></div>
         </div>
         
-
         <div class="aboutContainer">
             <img src="/sources/nosotros.png">
             <p>
@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <section class="resultados">
+    <section class="resultados" id="resultados">
         <div class="resultado">
             <img src="/sources/icono2.png">
             <p>4 años<br>
@@ -135,7 +135,7 @@
                     y traducir los requisitos comerciales en especificaciones técnicas claras y 
                     detalladas. Trabajamos en estrecha colaboración con tu equipo para 
                     identificar y analizar tus necesidades, asegurando que el software desarrollado
-                     cumpla con tus objetivos y expectativas</p>
+                     cumpla con tus objetivos y expectativas.</p>
             </div>
 
             <div class="card card-white">
@@ -145,7 +145,7 @@
                     de tu software antes de su lanzamiento al mercado. Utilizamos metodologías de
                     prueba rigurosas y herramientas avanzadas para identificar y solucionar 
                     cualquier problema o defecto potencial, garantizando una experiencia de usuario
-                    impecable</p>
+                    impecable.</p>
             </div>
 
             <div class="card card-white">
@@ -160,14 +160,14 @@
     </section>
 
     <section class="testimonios" id="testimonios">
-        <div class="containerH3" style="padding-left: 80px;">
+        <div class="containerH3">
             <div class="linea"></div>
                 <h3>TESTIMONIOS</h3>
             <div class="linea2"></div>
         </div>
 
         <div class="testimoniosContainer">
-            <div class="testimonio">
+            <div class="testimonio active">
                 <p><span>"</span>"Innovatech Solution superó mis expectativas con su enfoque innovador
                     y su dedicación al detalle.
                     ¡Recomendaría sus servicios a cualquiera que busque soluciones digitales excepcionales!" <span>"</span></p>
@@ -203,8 +203,7 @@
                     <p>(+54)911-4455-6677</p>
                 </div>
             </div>
-            
-
+        
             <div>
                 <form>
                     <div class="inputsContainer">
@@ -216,63 +215,69 @@
                                     placeholder="Ingrese su nombre y apellido"
                                     required>
                         </div>
-
+            
                         <div>
-                            <label for="correoelectronico"> Correo electrónico:</label>
+                            <label for="correoelectronico">Correo electrónico:</label>
                             <input type="email" 
                                     id="correoelectronico" 
                                     class="inputpadron" 
                                     placeholder="email@dominio.com"
                                     required>
                         </div>
-
+            
                         <div>
-                            <label for="mensaje"> Mensaje:</label>
+                            <label for="mensaje">Mensaje:</label>
                             <textarea cols="70" row="10" id="mensaje" class="inputpadron" required></textarea>
                         </div>
                     </div>
                     <input class="submit" type="submit" value="ENVIAR" id="enviar">
                 </form>  
+            
+                <div class="fieldTest">
                     <fieldset>
-                    
-                        <legend> ¿Como te gustaría que te contactaramos?</legend>
-
+                        <legend>¿Cómo te gustaría que te contactáramos?</legend>
+            
                         <label for="radioemail">
                             <input type="radio" name="contacto" value="email" id="radioemail">
                             Email
                         </label>
-
+            
                         <label for="radiotelefono">
                             <input type="radio" name="contacto" value="telefono" id="radiotelefono">
-                            Teléfono</label>
-
+                            Teléfono
+                        </label>
+            
                         <label for="radiowhatsapp">
                             <input type="radio" name="contacto" value="Whatsapp" id="radiowhatsapp" checked>
                             WhatsApp
                         </label>
                     </fieldset>
-                    <label class="checkbox">
-                        <input type="checkbox" checked>
-                        ¿Le gustaría recibir novedades de la consultora Innovatech?
-                    </label>
+                    <!--
                     <fieldset>
-                        <legend> ¿En cuál horario prefiere ser atendido?</legend>
+                        <label class="checkbox">
+                            <input type="checkbox" checked>
+                            ¿Le gustaría recibir novedades de la consultora Innovatech?
+                        </label>
+                    </fieldset> -->
+            
+                    <fieldset>
+                        <legend>¿En cuál horario prefiere ser atendido?</legend>
                         <select>
-                            <option> Mañana </option>
-                            <option> Tarde </option>
-                            <option> Noche </option>
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
                         </select>
-                    </fieldset>  
+                    </fieldset>
+                </div>
             </div>
+            
 
         </div> 
-    </section>
+    </section> 
 
-    <!--FOOTER SECTION-->
-    <!--TODO: Agregar logo y footer de redes sociales-->
     <footer class="footerContainer">
         <div class="nameFooter">
-            <img src="/doc/imgs/logo.png" alt="logo"> 
+            <img src="/doc/imgs/logowhite.png" alt="logo"> 
             <p>Innovatech Solutions</p>
         </div>
         
@@ -337,7 +342,7 @@
     </footer>
 
     <p class="copyright">
-        &copy Copyright Grupo 2 - FRONT END NODE JS  -  2024
+        &copy Copyright Grupo 2 - FRONTEND-NODE JS - 2024
     </p>
     <script src="main.js"></script>
 

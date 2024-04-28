@@ -38,3 +38,21 @@ window.onscroll = () => {
 
 /*Animacion para desplazar el navbar responsive */
 
+
+//
+document.addEventListener("DOMContentLoaded", function() {
+    var testimonios = document.querySelectorAll(".testimoniosContainer .testimonio");
+    var index = 0;
+
+    function mostrarTestimonio() {
+        testimonios.forEach(function(testimonio) {
+            testimonio.classList.remove("active");
+        });
+        testimonios[index].classList.add("active");
+        index = (index + 1) % testimonios.length;
+    }
+
+    mostrarTestimonio();
+
+    setInterval(mostrarTestimonio, 6000);
+});
