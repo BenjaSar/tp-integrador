@@ -151,8 +151,8 @@ h3{
         margin-right: 10px;
     }
     .heroContainer p{
-        font-size: 2.8vw;
-        width: 700px;
+        font-size: 2.5vw;
+        width: 750px;
     }
 
 .heroName{
@@ -249,13 +249,14 @@ h3{
     }
     .card h5{
         text-transform: uppercase;
-        font-size: 16px;
+        font-weight: bold;
+        font-size: 22px;
         margin-top: 20px;
     }
     .card p{
-        font-size: 14px;
+        font-size: 25px;
         margin-top: 37px;
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
 .card-white{
@@ -293,7 +294,7 @@ h3{
 
 .contacto{
     height: 550px;
-    padding: 80px;
+    padding: 40px;
 }
 
 .contactCardContainer{
@@ -340,15 +341,20 @@ h3{
     }
 
 .inputsContainer{
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     margin-left: 7.5vw;
 }
     .inputsContainer textarea{
         width: 50vw;
         height: 95px;
+        resize: none;
     }
 
+.fieldTest{
+    display: block;
+    flex-direction: row;
+    margin-left: 7.5vw;
+}    
 form label, form legend {
     display: block;
     font-size: 20px;
@@ -454,11 +460,7 @@ form label, form legend {
 .RedesSocialesContainer{
     display: flex;
 }
-    /* .RedesSocialesContainer i{
-        height: 20px;
-        width: 20px;
-    } */
-
+  
 .copyright{
     height: 50px;
     background: #151614;
@@ -468,6 +470,8 @@ form label, form legend {
     align-items: center;
     display: flex;
 }
+
+/*Half queries*/
 
 /* Large  and extra large devices */
 @media only screen and (min-width: 1200px) {
@@ -480,23 +484,8 @@ form label, form legend {
 @media only screen and (min-width: 1100px) {
     .aboutContainer{
         display: flex;
-        align-items: center;
+        justify-content: space-evenly;
     }
-        .aboutContainer p{
-            font-size: 1.3vw;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-        .aboutContainer img {
-            height: 330px;
-            margin:0px 80px 0px 0px;
-            border-radius: 10px;
-        }
-        .cardContainer {
-            display: flex;
-            justify-content: space-evenly;
-        }
     .card p {
             font-size: 10px;
             margin-top: 37px;
@@ -512,10 +501,9 @@ form label, form legend {
         .inputsContainer textarea {
             height: 95px;
         }
-        
+
 }
 
-/*Half queries*/
 @media (min-width: 768px){
     #menu-icon{
     display: none;
