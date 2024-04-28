@@ -5,21 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
     <title>Innovatech Solutions</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <a href="#" id="nombre-empresa">Innovatech Solution</a>
+        <div id="menu-icon">
+            <i class='bx bx-menu' ></i>
+        </div>
+        <nav class="navbar">
             <ul>
-                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#nosotros"class="active" >Nosotros</a></li>
                 <li><a href="#trabajos">Trabajos</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li>  Innovatech Solutions </li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#contacto" class="contactoBoton">Contacto</a></li>
             </ul>
         </nav> <br>    
     </header>
@@ -265,11 +277,11 @@
         </section>
     </footer>
 
-    <section class="copyright">
-        <p> &copy Copyright Grupo 2 - FRONT END NODE JS - 2024</p>
-    </section>
-    
-    <link src="main.js">
+    <p class="copyright">
+        &copy Copyright Grupo 2 - FRONT END NODE JS  -  2024
+    </p>
+    <script src="main.js"></script>
+
 </body>
 
 </html>

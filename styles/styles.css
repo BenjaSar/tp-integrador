@@ -15,11 +15,29 @@
     --gris-texto: #444444;
     --gris-claro: #ECECEC;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background-color: #BBBBBB;
+html{
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: #151715;
     padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header .sticky{
+    border-bottom: .1rem solid rgba(0,0,0, .2);
 }
 
 /*body{
@@ -36,14 +54,28 @@ nav li {
     margin: 0 0 0 15px;
 }
 
-nav a {
+nav a  {
     /*text-transform: uppercase;*/
     color: white;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 15px;
     text-decoration: none;
 }
 
+
+#nombre-empresa {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #fff;
+    cursor: default;
+    font-size: medium;
+    text-decoration: none;
+}
+#menu-icon{
+    color: #fff;
+    font-size: 25px;
+}
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     background-color: #424441;
@@ -122,6 +154,15 @@ h3{
     padding: 80px ;
 }
 
+.contactoBoton{
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #c4ff3d;
+    font-size: 20px;
+    color: #000;
+}
+
 .aboutContainer{
     display: flex;
     align-items: center;
@@ -138,6 +179,7 @@ h3{
         font-weight: 400;
         line-height: normal;
     }
+
 
 .servicios{
     height: 1100px;
@@ -346,7 +388,11 @@ form label, form legend {
 
 
 /*Half queries*/
-
+@media (min-width: 768px){
+    #menu-icon{
+    display: none;
+    }
+}
 @media (max-width: 1100px){
     .card{
         width: 30vw;
@@ -356,6 +402,47 @@ form label, form legend {
     .servicios{
         background-size: cover;
     }
+    html {
+        font-size: 55%;
+    }
+}
+
+
+@media (max-width: 991px){
+    .header {
+        padding: 2rem 3%
+    }
+    sections{
+        padding: 10rem 3% 2rem
+    }
+    
+}
+
+@media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: #151715;
+        border-top: .1rem solid rgba(0,0,0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+    } 
+    .navbar.active {
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        text-align: center;
+    }
+    
 }
 
 @media (max-width: 650px) {

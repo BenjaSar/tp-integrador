@@ -2,7 +2,7 @@
 #### Author
 Sabrina Lucero <br>
 Nicolas Mazzitello <br>
-Juan Camilo Molina <br>
+Juan Camilo Monina <br>
 Fabian Sarmiento <br>
 2024
 
