@@ -23,7 +23,7 @@ html{
 }
 
 .header {
-    background-color: #151715;
+    background-color: rgb(22, 24, 22);
     padding: 20px 0;
     position: fixed;
     top: 0;
@@ -34,6 +34,9 @@ html{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+#logo-header{
+    width: 50px;
 }
 .header .sticky{
     border-bottom: .1rem solid rgba(0,0,0, .2);
@@ -130,7 +133,7 @@ h3{
     .heroContainer img{
         height: 120px;
         width: 9vw;
-        margin-right: 30px;
+        margin-right: 10px;
     }
     .heroContainer p{
         font-size: 2.8vw;
@@ -452,10 +455,56 @@ form label, form legend {
 
 /* Large  and extra large devices */
 
-/*
-    @media only screen and (min-width: 1200px) {...}
-    @media only screen and (min-width: 992px) {...}
-*/
+
+    @media only screen and (min-width: 1200px) {
+        .cardContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+  @media only screen and (min-width: 1100px) {
+    .aboutContainer{
+        display: flex;
+        align-items: center;
+    }
+        .aboutContainer p{
+            font-size: 1.3vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .aboutContainer img {
+            height: 330px;
+            margin:0px 80px 0px 0px;
+            border-radius: 10px;
+        }
+        .cardContainer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    .card p {
+            font-size: 10px;
+            margin-top: 37px;
+            padding: 0px 10px 10px 10px;
+        }
+        .testimonios{
+            text-align: center;
+        }
+        .contactCard {
+            text-align: center;
+        }
+        .inputsContainer {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .inputsContainer textarea {
+            height: 95px;
+        }
+        
+  }
+
 
 
 /*Half queries*/
