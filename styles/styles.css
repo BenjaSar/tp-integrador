@@ -293,9 +293,10 @@ form label, form legend {
 
 /* Large  and extra large devices */
 
-@media only screen and (min-width: 1200px) {...}
-
-@media only screen and (min-width: 992px) {...}
+/* 
+    @media only screen and (min-width: 1200px) {...}
+    @media only screen and (min-width: 992px) {...} 
+*/
 
 
 /*Half queries*/
