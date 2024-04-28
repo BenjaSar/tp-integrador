@@ -630,6 +630,7 @@ form label, form legend {
     }
         .resultados p{
             font-size: 3vw;
+            width: 25vw;
         }
 
     .resultado{
@@ -638,9 +639,12 @@ form label, form legend {
         padding: 25px 0;
         width: 100%;
     }
-    .resultados .resultado:nth-child(3) {
-        background-color: #f5f4f4; 
-    }
+        .resultado img{
+            margin-right: 0;
+        }
+        .resultados .resultado:nth-child(3) {
+            background-color: #f5f4f4; 
+        }
 
     .separadorResultado{
         display: none;
