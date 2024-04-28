@@ -185,6 +185,7 @@ h3{
     .resultados p{
         color: #0f0f0f;
         font-size: 2.5vw;
+        text-align: center;
     }
 
 .resultado{
@@ -197,7 +198,7 @@ h3{
     }
 
 .separadorResultado{
-    width: 4px;
+    width: 3px;
     height: 140px;
     background-color: var(--ascent-color);
 }
