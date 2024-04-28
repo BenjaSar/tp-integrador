@@ -18,28 +18,20 @@
     padding: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(90px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.header {
-    background-color: rgb(22, 24, 22);
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-#logo-header{
-    width: 50px;
-}
-.header .sticky{
-    border-bottom: .1rem solid rgba(0,0,0, .2);
+
+html{
+    scroll-behavior: smooth;
 }
 
 nav li {
@@ -55,20 +47,6 @@ nav a  {
     text-decoration: none;
 }
 
-
-#nombre-empresa {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    color: #fff;
-    cursor: default;
-    font-size: medium;
-    text-decoration: none;
-}
-#menu-icon{
-    color: #fff;
-    font-size: 25px;
-}
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     background-color: #424441;
@@ -100,9 +78,27 @@ h3{
     /* padding-top: 124px; */
 }
 
+
+#nombre-empresa {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #fff;
+    cursor: default;
+    font-size: medium;
+    text-decoration: none;
+}
+#menu-icon{
+    color: #fff;
+    font-size: 25px;
+}
+
+#logo-header{
+    width: 50px;
+}
+
 .containerH3{
     display: flex;
-    /* height: 25px; */
     align-items: center;
     margin-bottom: 50px;
     width: 465px;
@@ -121,6 +117,25 @@ h3{
         width: 100%;
         margin-left: 10px;
     }
+
+
+.header {
+    background-color: rgb(22, 24, 22);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .sticky{
+    border-bottom: .1rem solid rgba(0,0,0, .2);
+}
 
 .heroContainer{
     height: 670px;
@@ -146,11 +161,6 @@ h3{
     margin-bottom: 30px;
 }
 
-.nosotros{
-    height: 570px;
-    padding: 80px ;
-}
-
 .contactoBoton{
     border-radius: 50px;
     padding: 10px 15px;
@@ -158,6 +168,11 @@ h3{
     background-color: #c4ff3d;
     font-size: 20px;
     color: #000;
+}
+
+.nosotros{
+    height: 570px;
+    padding: 80px ;
 }
 
 .aboutContainer{
@@ -179,8 +194,9 @@ h3{
 
 .resultados{
     height: 310px;
+    width: 100%;
     background-color: #fff;
-    padding: 77px 136px;
+    padding: 77px 9vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,7 +213,7 @@ h3{
     .resultado img{
         height: 78px;
         width: 78px;
-        margin-right: 30px;
+        margin-right: 2vw;
     }
 
 .separadorResultado{
@@ -454,17 +470,14 @@ form label, form legend {
 }
 
 /* Large  and extra large devices */
-
-
-    @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
         .cardContainer {
             display: flex;
             justify-content: space-between;
         }
-    }
+}
 
-
-  @media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1100px) {
     .aboutContainer{
         display: flex;
         align-items: center;
@@ -492,9 +505,6 @@ form label, form legend {
         .testimonios{
             text-align: center;
         }
-        .contactCard {
-            text-align: center;
-        }
         .inputsContainer {
             flex-wrap: wrap;
             justify-content: space-evenly;
@@ -503,9 +513,7 @@ form label, form legend {
             height: 95px;
         }
         
-  }
-
-
+}
 
 /*Half queries*/
 @media (min-width: 768px){
@@ -513,6 +521,7 @@ form label, form legend {
     display: none;
     }
 }
+
 @media (max-width: 1100px){
     .card{
         width: 30vw;
@@ -526,7 +535,6 @@ form label, form legend {
         font-size: 55%;
     }
 }
-
 
 @media (max-width: 991px){
     .header {
@@ -569,12 +577,85 @@ form label, form legend {
     h3{
         font-size: 20px;
     }
+
+    .containerH3{
+        margin-bottom: 20px;
+        width: 400px;
+        padding-left: 20px;
+    }
+
+    .heroContainer{
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 180px 10vw;
+    }
+        .heroContainer img{
+            height: 70px;
+        }
+        .heroContainer p{
+            font-size: 3vw;
+            width: 100%;
+        }
+    
+    .heroName{
+        justify-content: center;
+    }
+
+    .nosotros{
+        padding: 40px 0 0;
+    }
+
+    .aboutContainer{
+        display: block;
+        padding: 0 10%;
+    }
+        .aboutContainer img{
+            height: 250px;
+            width: 100%;
+            margin: 0;
+            border-radius: 0;
+        }
+        .aboutContainer p{
+            font-size: 2.8vw;
+            margin-top: 20px;
+        }
+
+    .resultados{
+        height: 400px;
+        margin-top: 40px;
+        display: block;
+        padding: 0;
+    }
+        .resultados p{
+            font-size: 3vw;
+        }
+
+    .resultado{
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0;
+        width: 100%;
+    }
+    .resultados .resultado:nth-child(3) {
+        background-color: #f5f4f4; 
+    }
+
+    .separadorResultado{
+        display: none;
+    }
+
     .servicios{
         background: none;
+        padding: 40px 0 0;
+        height: 1400px;
     }
+
     .cardContainer{
         flex-direction: column;
         padding: 0;
+        margin-top: 0;
     }
     .card{
         width: 100%;
@@ -588,5 +669,26 @@ form label, form legend {
     }
     .card:nth-child(4) {
         order: 3;
+    }
+
+    .testimonios{
+        margin-top: 20px;
+    }
+
+    .testimoniosContainer {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+    
+    .testimonio {
+        display: none;
+        animation: fadeInLeft 2s ease forwards;
+        line-height: 2;
+    }
+    
+    .testimonio.active {
+        display: block;
     }
 }
