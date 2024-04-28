@@ -221,6 +221,28 @@ h3{
     color: #f3f3f3;
 }
 
+.testimonios{
+    height: 336px;
+    margin-top: 80px;
+}
+
+.testimoniosContainer{
+    height: 265px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0f0f;
+    padding: 0 100px;
+}
+
+.testimonio{
+    font-size: 18px;
+    padding: 0 40px;
+}
+    .testimonio span{
+        color: var(--ascent-color);
+        font-size: 30px;
+    }
 
 .contacto{
     height: 550px;
