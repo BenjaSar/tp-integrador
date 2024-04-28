@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="es-AR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
           rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
     <title>Innovatech Solutions</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -30,8 +33,18 @@
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto" class="contactoBoton">Contacto</a></li>
             </ul>
-        </nav>
+        </nav> <br>
+                   
     </header>
+    <div class="logo-name"> 
+
+        <img src="/doc/imgs/logo.png" alt="logo"> <h1>Innovatech Solutions </h1>
+        
+        <p>Convertimos ideas en soluciones digitales excepcionales, 
+            fusionando innovación y funcionalidad para crear software 
+            y sitios web de primer nivel</p>
+    </div>
+
 
     <main>
         <section class="nosotros" id="nosotros">
@@ -53,8 +66,7 @@
         </section>
     
         <section class="servicios" id="servicios">
-            <h3>SERVICIOS</h3>
-    
+            <h3>SERVICIOS</h3>    
             <div class="cardContainer">
                 <div class="card card-white">
                     <img src="sources/physics.png" alt="icono">
@@ -63,7 +75,7 @@
                         dolores exercitationem eum molestiae quod aspernatur fugiat eaque consequuntur
                         ea laboriosam voluptatem, quo nisi. Eos dignissimos quas commodi aliquid?</p>
                 </div>
-    
+
                 <div class="card card-black">
                     <img src="sources/physics.png" alt="icono">
                     <h5>Servicio Recruiting</h5>
@@ -71,7 +83,7 @@
                         dolores exercitationem eum molestiae quod aspernatur fugiat eaque consequuntur
                         ea laboriosam voluptatem, quo nisi. Eos dignissimos quas commodi aliquid?</p>
                 </div>
-    
+
                 <div class="card card-black">
                     <img src="sources/physics.png" alt="icono">
                     <h5>Analistas Funcionales</h5>
@@ -79,7 +91,7 @@
                         dolores exercitationem eum molestiae quod aspernatur fugiat eaque consequuntur
                         ea laboriosam voluptatem, quo nisi. Eos dignissimos quas commodi aliquid?</p>
                 </div>
-    
+
                 <div class="card card-white">
                     <img src="sources/physics.png" alt="icono">
                     <h5>Testers</h5>
@@ -87,7 +99,7 @@
                         dolores exercitationem eum molestiae quod aspernatur fugiat eaque consequuntur
                         ea laboriosam voluptatem, quo nisi. Eos dignissimos quas commodi aliquid?</p>
                 </div>
-    
+
                 <div class="card card-white">
                     <img src="sources/physics.png" alt="icono">
                     <h5>UX/UI</h5>
@@ -97,49 +109,60 @@
                 </div>
             </div>
         </section>
+
         <section class="contacto" id="contacto">
             <h3> Contacto </h3>
             <div class="cardContainer">
                 <div class="card card-white">
                     <h5>Cuentános sobre tus necesidades</h5>
+
                 </div>
-                <div class="cardContainer">
+                
+
+                <div>
                     <form>
-                        <label for="nombreapellido">
-                            Nombre y Apellido
-                        </label>
-                        <input type="text" id="nombreapellido" class="inputpadron" required
-                               placeholder="Nombre y Apellido">
-                        <label for="Asunto">
-                            Asunto
-                        </label>
-                        <input type="text" id="asunto" class="inputpadron" required
-                               placeholder="Razón o interés de comunicarnos">
-                        <label for="correoelectronico"> Correo electrónico</label>
-                        <input type="email" id="correoelectronico" class="inputpadron" required
-                               placeholder="email@dominio.com">
-        
-                        <label for="telefono"> Teléfono </label>
-                        <input type="tel" id="telefono" class="inputpadron" required
-                               placeholder="(XX) XX XXXXXX ">
-        
-                        <label for="mensaje"> Mensaje</label>
-                        <textarea cols="70" row="10" id="mensaje" class="inputpadron" required></textarea>
+                        <div class="inputsContainer">
+                           <div>
+                                <label for="nombreapellido">Apellido-nombre/Empresa:</label>
+                                <input type="text" 
+                                        id="nombreapellido" 
+                                        class="inputpadron" 
+                                        placeholder="Ingrese su nombre y apellido"
+                                        required>
+                           </div>
+
+                            <div>
+                                <label for="correoelectronico"> Correo electrónico:</label>
+                                <input type="email" 
+                                        id="correoelectronico" 
+                                        class="inputpadron" 
+                                        placeholder="email@dominio.com"
+                                        required>
+                            </div>
+
+                            <div>
+                                <label for="mensaje"> Mensaje:</label>
+                                <textarea cols="70" row="10" id="mensaje" class="inputpadron" required></textarea>
+                            </div>
+                        </div>
+                        <input class="submit" type="submit" value="ENVIAR" id="enviar">
+                    </form>
+                            
                         <fieldset>
+                        
                             <legend> ¿Como te gustaría que te contactaramos?</legend>
-        
+
                             <label for="radioemail">
                                 <input type="radio" name="contacto" value="email" id="radioemail">
                                 Email
                             </label>
-        
+
                             <label for="radiotelefono">
                                 <input type="radio" name="contacto" value="telefono" id="radiotelefono">
                                 Teléfono</label>
-        
+
                             <label for="radiowhatsapp">
-                                <input type="radio" name="contacto" value="Whatsapp" id="radiowhatsapp"
-                                       checked>
+                                <input type="radio" name="contacto" value="Whatsapp" id="radiowhatsapp" checked>
                                 WhatsApp
                             </label>
                         </fieldset>
@@ -155,12 +178,13 @@
                                 <option> Noche </option>
                             </select>
                         </fieldset>
-                        <input class="submit" type="submit" value="Enviar" id="enviar">
-                    </form>
+                       
+                    
                 </div>
+
             </div> 
         </section>
-    </main>
+
     <!--FOOTER SECTION-->
     <!--TODO: Agregar logo y footer de redes sociales-->
     <footer class="footer__container">
@@ -171,51 +195,53 @@
             <h2 class="footer_titulo"> Información de contacto</h2>
         </section>
         <section class="redes_sociales">
-        <h2>Redes sociales</h2>
-        <div class="container">
-            <a href="#">
-                <div class="section facebook" tooltip="Facebook">
-                    <div class="icon">
-                        <i class="fab fa-facebook-f fa-lg"></i>
+            <h2>Redes sociales</h2>
+            <div class="container">
+                <a href="#">
+                    <div class="section facebook" tooltip="Facebook">
+                        <div class="icon">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="section instagram" tooltip="Instagram">
-                    <div class="icon">
-                        <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a href="#">
+                    <div class="section instagram" tooltip="Instagram">
+                        <div class="icon">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="section youtube" tooltip="Youtube">
-                    <div class="icon">
-                        <i class="fab fa-youtube fa-lg"></i>
+                </a>
+                <a href="#">
+                    <div class="section youtube" tooltip="Youtube">
+                        <div class="icon">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="section twitter" tooltip="Twitter">
-                    <div class="icon">
-                        <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a href="#">
+                    <div class="section twitter" tooltip="Twitter">
+                        <div class="icon">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="section github" tooltip="Github">
-                    <div class="icon">
-                        <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="#">
+                    <div class="section github" tooltip="Github">
+                        <div class="icon">
+                            <i class="fab fa-github fa-lg"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        
+                </a>
+            </div>
+
         </section>
     </footer>
+
     <p class="copyright">
         &copy Copyright Grupo 2 - FRONT END NODE JS  -  2024
     </p>
     <script src="main.js"></script>
+
 </body>
 
 </html>
