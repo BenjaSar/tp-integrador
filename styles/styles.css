@@ -111,11 +111,11 @@ h3{
 
     .linea{
         width: 50px;
-        margin-right: 10px;
+        margin-right: 1.55vw;
     }
     .linea2{
         width: 100%;
-        margin-left: 10px;
+        margin-left: 1.55vw;
     }
 
 
@@ -575,12 +575,12 @@ form label, form legend {
 
 @media (max-width: 650px) {
     h3{
-        font-size: 20px;
+        font-size: 3.1vw;
     }
 
     .containerH3{
         margin-bottom: 20px;
-        width: 400px;
+        width: 70vw;
         padding-left: 20px;
     }
 
@@ -672,7 +672,8 @@ form label, form legend {
     }
 
     .testimonios{
-        margin-top: 20px;
+        margin-top: 0;
+        /* padding-top: 40px; */
     }
 
     .testimoniosContainer {
@@ -690,5 +691,32 @@ form label, form legend {
     
     .testimonio.active {
         display: block;
+    }
+
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 490px;
+    }
+
+    .nameFooter{
+        padding: 0;
+    }
+        .nameFooter img{
+            height: 50px;
+            width: 7vw;
+        }
+    
+    .informacionContacto{
+        text-align: center;
+    }
+
+    .footerPhone{
+        margin-top: 20px;  
+    }
+
+    .footerMail{
+        margin-top: 10px;
     }
 }
