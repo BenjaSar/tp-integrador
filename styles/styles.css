@@ -109,7 +109,7 @@ h3{
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    width: 70vw;
+    width: 40vw;
 }
 
 .linea, .linea2{
@@ -253,17 +253,17 @@ h3{
     text-align: center;
 }
     .card img{
-        margin-top: 28px;
+        margin-top: 25px;
     }
     .card h5{
         text-transform: uppercase;
         font-weight: bold;
         font-size: 22px;
-        margin-top: 20px;
+        margin-top: 25px;
     }
     .card p{
-        font-size: 25px;
-        margin-top: 37px;
+        font-size: 1vw;
+        margin-top: 10px;
         padding: 0 15px;
     }
 
@@ -685,7 +685,7 @@ form label, form legend {
         }
 
     .resultados{
-        height: 400px;
+        height: 370px;
         margin-top: 40px;
         display: block;
         padding: 0;
