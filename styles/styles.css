@@ -323,7 +323,7 @@ h3{
         margin-bottom: 20px;
     }
     .contactCard p:nth-child(1), .contactCard p:nth-child(2){
-        font-size: 40px;
+        font-size: 5.7vw;
     }
 
     .contactCard p:nth-child(2){
@@ -408,8 +408,6 @@ form label, form legend {
     background-color: transparent;
     margin-right: 35px;
 }
-
-
 
 .checkbox{
     margin: 20px 0;
@@ -773,6 +771,29 @@ form label, form legend {
     .testimonio.active {
         display: block;
     }
+
+    .contacto{
+        padding: 80px 4vw 0;
+        height: 800px;
+    }
+
+    .contactCardContainer{
+        flex-direction: column;
+    }
+
+    .contactCard{
+        background-color: #0f0f0f;
+        height: 260px;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        border-radius: 10px;
+    }
+
+    .phoneContainer{
+        justify-content: center;
+    }
+
 
     .footerContainer{
         display: flex;
