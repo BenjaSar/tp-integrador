@@ -101,7 +101,7 @@ h3{
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    width: 465px;
+    width: 70vw;
 }
 
 .linea, .linea2{
@@ -226,7 +226,7 @@ h3{
     height: 1100px;
     background-image: url("/sources/serviciosBckg.png");
     background-size: 100% auto;
-    padding: 80px ;
+    padding: 6.7vw;
 }
 
 .cardContainer{
@@ -284,8 +284,8 @@ h3{
 }
 
 .testimonio{
-    font-size: 18px;
-    padding: 0 40px;
+    font-size: 1.4vw;
+    padding: 0 4.02vw;
 }
     .testimonio span{
         color: var(--ascent-color);
@@ -486,11 +486,7 @@ form label, form legend {
         display: flex;
         justify-content: space-evenly;
     }
-    .card p {
-            font-size: 10px;
-            margin-top: 37px;
-            padding: 0px 10px 10px 10px;
-        }
+    
         .testimonios{
             text-align: center;
         }
@@ -511,14 +507,6 @@ form label, form legend {
 }
 
 @media (max-width: 1100px){
-    .card{
-        width: 30vw;
-        height: 250px;
-        margin: 0 20px 65px;
-    }
-    .servicios{
-        background-size: cover;
-    }
     html {
         font-size: 55%;
     }
@@ -559,6 +547,60 @@ form label, form legend {
         text-align: center;
     }
 
+}
+
+@media (max-width:1000px){
+    h3{
+        font-size: 2.23vw;
+    }
+
+    .containerH3{
+        width: 50vw;
+        margin-bottom: 25px;
+    }
+
+    .resultados{
+        height: 200px;
+        padding: 50px 6vw;
+    }
+
+    .resultado img{
+        height: 70px;
+        width: 9vw;
+        margin-right: 2vw;
+    }
+
+    .separadorResultado{
+        width: 3px;
+        height: 70px;
+    }
+
+    .servicios{
+        height: 1000px;
+    }
+
+    .card{
+        width: 37vw;
+        margin: 0 1vw 30px;
+    }
+        .card p{
+            font-size: 1.2vw;
+            margin-top: 20px;
+            padding: 0 15px;
+        }
+
+    .testimonios{
+        margin-top: 60px;
+    }
+    .testimoniosContainer{
+        height: 200px;
+        padding: 0 20px;
+    }
+
+    .testimonio{
+        font-size: 1.4vw;
+        padding: 0 2.02vw;
+    }
 }
 
 @media (max-width: 650px) {
@@ -629,13 +671,12 @@ form label, form legend {
     }
         .resultado img{
             margin-right: 0;
-        }
-        .resultados .resultado:nth-child(3) {
-            background-color: #f5f4f4; 
-        }
+         }
 
     .separadorResultado{
-        display: none;
+        width: 500px;
+        height: 3px;
+        margin: 0 auto;
     }
 
     .servicios{
@@ -662,6 +703,11 @@ form label, form legend {
     .card:nth-child(4) {
         order: 3;
     }
+        .card p{
+            font-size: 2.5vw;
+            margin-top: 20px;
+            padding: 0 15px;
+        }
 
     .testimonios{
         margin-top: 0;
@@ -674,12 +720,20 @@ form label, form legend {
         position: relative;
         padding: 0;
     }
+
+    .testimoniosContainer{
+        padding: 0 30px;
+    }
     
     .testimonio {
         display: none;
         animation: fadeInLeft 2s ease forwards;
         line-height: 2;
     }
+        .testimonio p{
+            font-size: 2.3vw;
+            line-height: 1.5;
+        }
     
     .testimonio.active {
         display: block;
