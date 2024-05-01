@@ -510,6 +510,16 @@ form label, form legend {
         .cardContainer {
             display: flex;
             justify-content: space-between;
+            
+        }
+
+        .contactCard p{
+            margin-top: 20px;
+            margin-left: 1vh;
+            margin-bottom: 20px;
+        }
+        .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+            font-size: 3.7vw;
         }
 
         /*.inputsContainer {
@@ -549,6 +559,24 @@ form label, form legend {
         .testimonios{
             text-align: center;
         }
+
+        .contactCard p{
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+        .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+            font-size: 3.8vw;
+        }
+
+        .contactCardContainer {
+            width: 100%;
+        }
+        
+        .contactCard{
+            padding: 0.5px;
+            height: 300px;
+        }
+
         .inputsContainer {
             flex-wrap: wrap;
             height: 300px;
@@ -581,6 +609,14 @@ form label, form legend {
     }
     .submit{
         margin-bottom: 10px;
+    }
+
+    .contactCard p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+        font-size: 3.5vw;
     }
 
     .card_radio_button{
