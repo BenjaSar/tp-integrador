@@ -23,6 +23,7 @@
         opacity: 0;
         transform: translateX(90px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -45,6 +46,14 @@ nav a {
     font-weight: bold;
     font-size: 15px;
     text-decoration: none;
+}
+
+.lista-logo {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 body {
@@ -88,12 +97,13 @@ h3 {
     font-size: medium;
     text-decoration: none;
 }
-#menu-icon{
+
+#menu-icon {
     color: #fff;
     font-size: 25px;
 }
 
-#logo-header{
+#logo-header {
     width: 50px;
 }
 
@@ -110,14 +120,15 @@ h3 {
     background-color: #C4FF3D;
 }
 
-    .linea{
-        width: 50px;
-        margin-right: 1.55vw;
-    }
-    .linea2{
-        width: 100%;
-        margin-left: 1.55vw;
-    }
+.linea {
+    width: 50px;
+    margin-right: 1.55vw;
+}
+
+.linea2 {
+    width: 100%;
+    margin-left: 1.55vw;
+}
 
 
 .header {
@@ -134,8 +145,8 @@ h3 {
     z-index: 100;
 }
 
-.header .sticky{
-    border-bottom: .1rem solid rgba(0,0,0, .2);
+.header .sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
 .heroContainer {
@@ -146,15 +157,17 @@ h3 {
     padding-top: 245px;
     padding-left: 245px;
 }
-    .heroContainer img{
-        height: 120px;
-        width: 9vw;
-        margin-right: 10px;
-    }
-    .heroContainer p{
-        font-size: 2.5vw;
-        width: 750px;
-    }
+
+.heroContainer img {
+    height: 120px;
+    width: 9vw;
+    margin-right: 10px;
+}
+
+.heroContainer p {
+    font-size: 2.5vw;
+    width: 750px;
+}
 
 .heroName {
     display: flex;
@@ -171,9 +184,9 @@ h3 {
     color: #000;
 }
 
-.nosotros{
+.nosotros {
     height: 570px;
-    padding: 80px ;
+    padding: 80px;
 }
 
 .aboutContainer {
@@ -214,11 +227,12 @@ h3 {
 .resultado {
     display: flex;
 }
-    .resultado img{
-        height: 78px;
-        width: 78px;
-        margin-right: 2vw;
-    }
+
+.resultado img {
+    height: 78px;
+    width: 78px;
+    margin-right: 2vw;
+}
 
 .separadorResultado {
     width: 3px;
@@ -248,20 +262,23 @@ h3 {
     border-radius: 5px;
     text-align: center;
 }
-    .card img{
-        margin-top: 28px;
-    }
-    .card h5{
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 22px;
-        margin-top: 20px;
-    }
-    .card p{
-        font-size: 25px;
-        margin-top: 37px;
-        padding: 0 15px;
-    }
+
+.card img {
+    margin-top: 28px;
+}
+
+.card h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.card p {
+    font-size: 25px;
+    margin-top: 37px;
+    padding: 0 15px;
+}
 
 .card-white {
     background-color: #f3f3f3;
@@ -351,22 +368,25 @@ h3 {
     margin-left: 10px;
 }
 
-.inputsContainer{
+.inputsContainer {
     display: block;
     margin-left: 7.5vw;
 }
-    .inputsContainer textarea{
-        width: 50vw;
-        height: 95px;
-        resize: none;
-    }
 
-.fieldTest{
+.inputsContainer textarea {
+    width: 50vw;
+    height: 95px;
+    resize: none;
+}
+
+.fieldTest {
     display: block;
     flex-direction: row;
     margin-left: 7.5vw;
-}    
-form label, form legend {
+}
+
+form label,
+form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -478,8 +498,8 @@ label {
 .RedesSocialesContainer {
     display: flex;
 }
-  
-.copyright{
+
+.copyright {
     height: 50px;
     background: #151614;
     color: white;
@@ -492,13 +512,13 @@ label {
 
 /* Large  and extra large devices */
 @media only screen and (min-width: 1200px) {
-        .cardContainer {
-            display: flex;
-            justify-content: space-between;
-        }
+    .cardContainer {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
-    
+
 @media only screen and (min-width: 1100px) {
     .aboutContainer {
         display: flex;
@@ -555,6 +575,7 @@ label {
         display: flex;
 
     }
+
     .card {
         width: 30vw;
         height: 250px;
@@ -571,156 +592,216 @@ label {
 }
 
 
-    /*Half queries*/
-    @media (min-width: 768px) {
-        #menu-icon {
-            display: none;
-        }
+/*Half queries*/
+@media (min-width: 768px) {
+    #menu-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 651px) {
+
+    .heroContainer p {
+        font-size: 18px;
     }
 
-      
-
-
-    @media (max-width: 991px) {
-        .header {
-            padding: 2rem 3%
-        }
-
-        sections {
-            padding: 10rem 3% 2rem
-        }
-
+    .aboutContainer {
+        flex-direction: column;
     }
 
-    @media (max-width: 768px) {
-        #menu-icon {
-            display: block;
-        }
+    .aboutContainer p {
+        font-size: 16px;
+    }
 
-        .navbar {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            padding: 1rem 3%;
-            background-color: #151715;
-            border-top: .1rem solid rgba(0, 0, 0, .2);
-            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        }
+    .heroContainer {
+        padding-left: 150px;
+    }
 
-        .navbar.active {
-            display: block;
-        }
+    .heroContainer img {
+        width: auto
+    }
 
-        .navbar a {
-            display: block;
-            font-size: 2rem;
-            margin: 3rem 0;
-            text-align: center;
-        }
+    .aboutContainer img {
+        height: 250px;
+        width: auto;
+        margin: 0;
+        border-radius: 10px;
+        margin-bottom: 20px;
 
     }
+}
+
+@media(min-width: 712px) {
+    .aboutContainer img {
+        height: 300px;
+    }
+
+    .nosotros {
+        height: 570px;
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+}
+
+}
+
+
+
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%
+    }
+
+    sections {
+        padding: 10rem 3% 2rem
+    }
+
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: #151715;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        text-align: center;
+    }
+
+}
 
 @media (max-width: 650px) {
-    h3{
+    h3 {
         font-size: 3.1vw;
     }
 
-    .containerH3{
+    .containerH3 {
         margin-bottom: 20px;
         width: 70vw;
         padding-left: 20px;
     }
 
-    .heroContainer{
+    .heroContainer {
         height: 500px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         padding: 180px 10vw;
     }
-        .heroContainer img{
-            height: 70px;
-        }
-        .heroContainer p{
-            font-size: 3vw;
-            width: 100%;
-        }
-    
-    .heroName{
+
+    .heroContainer img {
+        height: 70px;
+    }
+
+    .heroContainer p {
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .heroName {
         justify-content: center;
     }
 
-    .nosotros{
+    .nosotros {
         padding: 40px 0 0;
     }
 
-    .aboutContainer{
+    .aboutContainer {
         display: block;
         padding: 0 10%;
     }
-        .aboutContainer img{
-            height: 250px;
-            width: 100%;
-            margin: 0;
-            border-radius: 0;
-        }
-        .aboutContainer p{
-            font-size: 2.8vw;
-            margin-top: 20px;
-        }
 
-    .resultados{
+    .aboutContainer img {
+        height: 250px;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .aboutContainer p {
+        font-size: 2.8vw;
+        margin-top: 20px;
+    }
+
+    .resultados {
         height: 400px;
         margin-top: 40px;
         display: block;
         padding: 0;
     }
-        .resultados p{
-            font-size: 3vw;
-        }
 
-    .resultado{
+    .resultados p {
+        font-size: 3vw;
+    }
+
+    .resultado {
         justify-content: center;
         align-items: center;
         padding: 25px 0;
         width: 100%;
     }
+
     .resultados .resultado:nth-child(3) {
-        background-color: #f5f4f4; 
+        background-color: #f5f4f4;
     }
 
-    .separadorResultado{
+    .separadorResultado {
         display: none;
     }
 
-    .servicios{
+    .servicios {
         background: none;
         padding: 40px 0 0;
         height: 1400px;
     }
 
-    .cardContainer{
+    .cardContainer {
         flex-direction: column;
         padding: 0;
         margin-top: 0;
     }
-    .card{
+
+    .card {
         width: 100%;
         margin: 0;
         margin-bottom: 5px;
         padding: 0;
         border-radius: 0;
     }
+
     .card:nth-child(3) {
         order: 3;
     }
+
     .card:nth-child(4) {
         order: 3;
     }
 
-    .testimonios{
+    .testimonios {
         margin-top: 0;
         /* padding-top: 40px; */
     }
@@ -731,41 +812,42 @@ label {
         position: relative;
         padding: 0;
     }
-    
+
     .testimonio {
         display: none;
         animation: fadeInLeft 2s ease forwards;
         line-height: 2;
     }
-    
+
     .testimonio.active {
         display: block;
     }
 
-    .footerContainer{
+    .footerContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 490px;
     }
 
-    .nameFooter{
+    .nameFooter {
         padding: 0;
     }
-        .nameFooter img{
-            height: 50px;
-            width: 7vw;
-        }
-    
-    .informacionContacto{
+
+    .nameFooter img {
+        height: 50px;
+        width: 7vw;
+    }
+
+    .informacionContacto {
         text-align: center;
     }
 
-    .footerPhone{
-        margin-top: 20px;  
+    .footerPhone {
+        margin-top: 20px;
     }
 
-    .footerMail{
+    .footerMail {
         margin-top: 10px;
     }
 }
