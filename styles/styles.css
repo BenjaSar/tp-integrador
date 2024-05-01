@@ -511,6 +511,33 @@ form label, form legend {
             display: flex;
             justify-content: space-between;
         }
+
+        /*.inputsContainer {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .inputsContainer textarea {
+            height: 95px;
+        }*/
+
+        .inputsContainer {
+            flex-wrap: wrap;
+            height: 300px;
+            justify-content: space-evenly;
+        }
+        .inputsContainer textarea {
+            height: 95px;
+        }
+
+        .submit{
+            margin-bottom: 25px;
+        }
+    
+        .card_radio_button{
+            padding-top: 10px;
+            margin-top: 40px;
+            margin-bottom: 5px;
+        }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -524,10 +551,20 @@ form label, form legend {
         }
         .inputsContainer {
             flex-wrap: wrap;
+            height: 300px;
             justify-content: space-evenly;
         }
         .inputsContainer textarea {
-            height: 95px;
+            height: 75px;
+        }
+
+        .submit{
+            margin-bottom: 8px;
+        }
+    
+        .card_radio_button{
+            padding-top: 5px;
+            margin-bottom: 5px;
         }
 
 }
@@ -541,6 +578,21 @@ form label, form legend {
 @media (max-width: 1100px){
     html {
         font-size: 55%;
+    }
+    .submit{
+        margin-bottom: 10px;
+    }
+
+    .card_radio_button{
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+    .inputsContainer{
+        height: 300px;
+    }
+
+    .inputsContainer textarea {
+        height: 70px;
     }
 }
 
@@ -578,7 +630,6 @@ form label, form legend {
         margin: 3rem 0;
         text-align: center;
     }
-
 }
 
 @media (max-width:1000px){
@@ -620,6 +671,26 @@ form label, form legend {
             margin-top: 20px;
             padding: 0 15px;
         }
+    
+    .inputsContainer{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .submit{
+        margin-bottom: 10px;
+    }
+
+    .card_radio_button{
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .inputsContainer textarea {
+        height: 75px;
+    }
 
     .testimonios{
         margin-top: 60px;
@@ -794,6 +865,10 @@ form label, form legend {
         justify-content: center;
     }
 
+
+    .card_radio_button{
+        display: none;
+    }
 
     .footerContainer{
         display: flex;
