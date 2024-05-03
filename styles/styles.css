@@ -404,13 +404,6 @@ h3 {
         position: relative;
     }
 
-
-
-/*.fieldTest{
-    display: block;
-    flex-direction: row;
-    margin-left: 7.5vw;
-} */   
 form label, form legend {
     display: block;
     font-size: 20px;
@@ -540,6 +533,35 @@ label {
         .cardContainer {
             display: flex;
             justify-content: space-between;
+            
+        }
+
+        .contactCard p{
+            margin-top: 20px;
+            margin-left: 1vh;
+            margin-bottom: 20px;
+        }
+        .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+            font-size: 3.7vw;
+        }
+
+        .inputsContainer {
+            flex-wrap: wrap;
+            height: 300px;
+            justify-content: space-evenly;
+        }
+        .inputsContainer textarea {
+            height: 95px;
+        }
+
+        .submit{
+            margin-bottom: 25px;
+        }
+    
+        .card_radio_button{
+            padding-top: 10px;
+            margin-top: 40px;
+            margin-bottom: 5px;
         }
 }
 
@@ -567,30 +589,44 @@ label {
         display: flex;
         justify-content: space-evenly;
     }
+        .testimonios{
+            text-align: center;
+        }
 
-    .card p {
-        font-size: 13px;
-        margin-top: 37px;
-        padding: 0px 10px 10px 10px;
-    }
+        .contactCard p{
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+        .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+            font-size: 3.8vw;
+        }
 
-    .testimonios {
-        text-align: center;
-    }
+        .contactCardContainer {
+            width: 100%;
+        }
+        
+        .contactCard{
+            padding: 0.5px;
+            height: 300px;
+        }
 
-    .contactCard {
-        text-align: center;
-    }
+        .inputsContainer {
+            flex-wrap: wrap;
+            height: 300px;
+            justify-content: space-evenly;
+        }
+        .inputsContainer textarea {
+            height: 75px;
+        }
 
-    .inputsContainer {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .inputsContainer textarea {
-        height: 95px;
-    }
-
+        .submit{
+            margin-bottom: 8px;
+        }
+    
+        .card_radio_button{
+            padding-top: 5px;
+            margin-bottom: 5px;
+        }
 }
 
 @media (min-width: 768px){
@@ -622,18 +658,40 @@ label {
     html {
         font-size: 55%;
     }
+    .submit{
+        margin-bottom: 10px;
+    }
+
+    .contactCard p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+        font-size: 3.5vw;
+    }
+
+    .card_radio_button{
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+    .inputsContainer{
+        height: 300px;
+    }
+
+    .inputpadron{
+        width: 27vw;
+    }
+
+    .inputsContainer textarea {
+        height: 65px;
+    }
 }
-
-
     /*Half queries*/
     @media (min-width: 768px) {
         #menu-icon {
             display: none;
         }
     }
-
-      
-
 
     @media (max-width: 991px) {
         .header {
@@ -647,33 +705,69 @@ label {
     }
 
     @media (max-width: 768px) {
-        #menu-icon {
-            display: block;
+    #menu-icon {
+        display: block;
         }
 
-        .navbar {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            padding: 1rem 3%;
-            background-color: #151715;
-            border-top: .1rem solid rgba(0, 0, 0, .2);
-            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        }
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: #151715;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    }
 
-        .navbar.active {
-            display: block;
-        }
+    .navbar.active {
+        display: block;
+    }
 
-        .navbar a {
-            display: block;
-            font-size: 2rem;
-            margin: 3rem 0;
-            text-align: center;
-        }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        text-align: center;
+    }    
 
+
+    .contactCardContainer{
+        margin-left: 1px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .contactCard p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+    .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+        font-size: 3.5vw;
+    }
+
+    .inputsContainer{
+        margin-left: 10px;
+    }
+
+    .card_radio_button{
+        display: flex;
+        flex-direction: column;	
+        font-size: 15px;
+        width: 320px;
+        padding: 10px 25px;
+        margin-left: 5.5vw;
+    }
+
+    .inputsContainer textarea {
+        height: 70px;
+    }
+
+    .submit{
+        margin-right: 8.5vw;
+    }
 }
 
 @media (max-width:1000px){
@@ -715,6 +809,30 @@ label {
             margin-top: 20px;
             padding: 0 15px;
         }
+    
+    .inputsContainer{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .submit{
+        margin-bottom: 10px;
+    }
+
+    .card_radio_button{
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .inputpadron{
+        width: 45vw;
+    }
+
+    .inputsContainer textarea {
+        height: 70px;
+    }
 
     .testimonios{
         margin-top: 60px;
@@ -886,10 +1004,22 @@ label {
         border-radius: 10px;
     }
 
+    .inputpadron{
+        width: 70vw;
+    }
+
+    .inputsContainer textarea{
+        width: 70vw;
+    }
+
     .phoneContainer{
         justify-content: center;
     }
 
+
+    .card_radio_button{
+        display: none;
+    }
 
     .footerContainer{
         display: flex;
