@@ -57,7 +57,6 @@
     </section>
 
     <section class="nosotros" id="nosotros">
-
         <div class="containerH3">
             <div class="linea"></div>
             <h3>NOSOTROS</h3>
@@ -235,18 +234,35 @@
                             <label for="mensaje">Mensaje:</label>
                             <textarea cols="70" row="10" id="mensaje" class="inputpadron" required></textarea>
                         </div>
+                        
                     </div>
                     <input class="submit" type="submit" value="ENVIAR" id="enviar">
-                </form>
 
-                <div class="fieldTest">
+                </form>  
+            
+                <div class=card_radio_button>
                     <fieldset>
                         <legend>¿Cómo te gustaría que te contactáramos?</legend>
-
-                        <label for="radioemail">
-                            <input type="radio" name="contacto" value="email" id="radioemail">
-                            Email
-                        </label>
+                        <ul>
+                            <li>
+                                <label for="radioemail">
+                                    <input type="radio" name="contacto" value="email" id="radioemail">
+                                    Email
+                                </label>
+                            </li>
+                            <li><label for="radiotelefono">
+                                <input type="radio" name="contacto" value="telefono" id="radiotelefono">
+                                Teléfono
+                            </label></li>
+                            <li>
+                                <label for="radiowhatsapp">
+                                    <input type="radio" name="contacto" value="Whatsapp" id="radiowhatsapp" checked>
+                                    WhatsApp
+                                </label>
+                            </li>
+                        </ul>
+                        
+                    <!--
 
                         <label for="radiotelefono">
                             <input type="radio" name="contacto" value="telefono" id="radiotelefono">
@@ -256,15 +272,13 @@
                         <label for="radiowhatsapp">
                             <input type="radio" name="contacto" value="Whatsapp" id="radiowhatsapp" checked>
                             WhatsApp
-                        </label>
-                    </fieldset>
-                    <!--
+                     </fieldset>
+                     
                     <fieldset>
                         <label class="checkbox">
                             <input type="checkbox" checked>
                             ¿Le gustaría recibir novedades de la consultora Innovatech?
                         </label>
-                    </fieldset> -->
 
                     <fieldset>
                         <legend>¿En cuál horario prefiere ser atendido?</legend>
@@ -273,13 +287,11 @@
                             <option>Tarde</option>
                             <option>Noche</option>
                         </select>
-                    </fieldset>
-                </div>
+                    </fieldset> 
+                </div> -->
             </div>
 
 
-        </div>
-    </section>
 
     <footer class="footerContainer">
         <div class="nameFooter">
