@@ -163,6 +163,7 @@ h3 {
     background: url("/sources/heroBackg.png"),
         linear-gradient(90deg, #C0FD3D 0%, #151614 101.15%);
     background-size: 100%;
+    background-repeat: round;
     padding-top: 245px;
     padding-left: 245px;
 }
@@ -312,12 +313,14 @@ h3 {
 }
 
 .testimonio{
-    font-size: 1.4vw;
-    padding: 0 4.02vw;
-.testimonio {
-    font-size: 18px;
-    padding: 0 40px;
+        font-size: 1.4vw;
+        padding: 0 4.02vw;
 }
+    .testimonio {
+        font-size: 18px;
+        padding: 0 40px;
+    }
+
 
 .testimonio span {
     color: var(--ascent-color);
@@ -343,25 +346,32 @@ h3 {
     padding-right: 38px;
     padding-top: 63px;
 }
+    .contactCardLegend{
+        font-size: 2.5vw;
+    }
+    .contactCardSub{
+        font-size: 1.3vw;
+    }
+
     .contactCard p{
         margin-bottom: 20px;
     }
-    .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+    /* .contactCard p:nth-child(1), .contactCard p:nth-child(2){
         font-size: 5.7vw;
-    }
+    } */
 
 .contactCard p {
     margin-bottom: 20px;
 }
 
-.contactCard p:nth-child(1),
+/* .contactCard p:nth-child(1),
 .contactCard p:nth-child(2) {
     font-size: 40px;
 }
 
 .contactCard p:nth-child(2) {
     font-size: 20px;
-}
+} */
 
 .contactCard span {
     color: var(--ascent-color);
@@ -552,9 +562,9 @@ label {
             margin-left: 1vh;
             margin-bottom: 20px;
         }
-        .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+        /* .contactCard p:nth-child(1), .contactCard p:nth-child(2){
             font-size: 3.7vw;
-        }
+        } */
 
         .inputsContainer {
             flex-wrap: wrap;
@@ -604,12 +614,20 @@ label {
         }
 
         .contactCard p{
+            /* font-size: 1.8vw; */
             margin-top: 25px;
             margin-bottom: 20px;
         }
-        .contactCard p:nth-child(1), .contactCard p:nth-child(2){
-            font-size: 3.8vw;
-        }
+
+.contactCardLegend{
+    font-size: 2.0vw;
+}
+.contactCardSub{
+    font-size: 1.0vw;
+}
+        /* .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+            font-size: 2.5vw;
+        } */
 
         .contactCardContainer {
             width: 100%;
@@ -647,7 +665,7 @@ label {
 
 @media (max-width: 1100px){
     .heroContainer p {
-        font-size: 45px;
+        font-size: 3vw;
         width: 700px;
     }
 
@@ -692,42 +710,41 @@ label {
     .inputpadron{
         width: 27vw;
     }
-
+}
     /*Half queries*/
-    @media (min-width: 768px) {
-        #menu-icon {
-            display: none;
-
+@media (min-width: 768px) {
+    #menu-icon {
+        display: none;
     }
 }
 
 
-    @media (max-width: 991px) {
-        .header {
-            padding: 2rem 3%
-        }
-
-    .aboutContainer p {
-        font-size: 16px;
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%
     }
 
-    .heroContainer {
-        padding-left: 150px;
-    }
+.aboutContainer p {
+    font-size: 16px;
+}
+
+.heroContainer {
+    padding-left: 150px;
+}
 
 
-    .heroContainer img {
-        width: auto
-    }
+.heroContainer img {
+    width: auto
+}
 
-    .aboutContainer img {
-        height: 250px;
-        width: auto;
-        margin: 0;
-        border-radius: 10px;
-        margin-bottom: 20px;
+.aboutContainer img {
+    height: 250px;
+    width: auto;
+    margin: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
 
-    }
+}
 }
 
 @media(min-width: 712px) {
@@ -749,11 +766,7 @@ label {
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%
-
-    @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-        }
+    }
 
     .navbar {
         display: none;
@@ -894,11 +907,9 @@ label {
 
     }
 
-    sections {
+    /* sections {
         padding: 10rem 3% 2rem
-    }
-
-}
+    } */
 
 @media (max-width: 768px) {
     #menu-icon {
