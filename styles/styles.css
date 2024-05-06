@@ -586,6 +586,7 @@ label {
         }
 
 }
+
 @media only screen and (min-width: 1100px) {
     .aboutContainer {
         display: flex;
@@ -609,61 +610,50 @@ label {
         display: flex;
         justify-content: space-evenly;
     }
-        .testimonios{
-            text-align: center;
-        }
 
-        .contactCard p{
-            /* font-size: 1.8vw; */
-            margin-top: 25px;
-            margin-bottom: 20px;
-        }
-
-.contactCardLegend{
-    font-size: 2.0vw;
-}
-.contactCardSub{
-    font-size: 1.0vw;
-}
-        /* .contactCard p:nth-child(1), .contactCard p:nth-child(2){
-            font-size: 2.5vw;
-        } */
-
-        .contactCardContainer {
-            width: 100%;
-        }
-        
-        .contactCard{
-            padding: 0.5px;
-            height: 300px;
-        }
-
-        .inputsContainer {
-            flex-wrap: wrap;
-            height: 300px;
-            justify-content: space-evenly;
-        }
-        .inputsContainer textarea {
-            height: 75px;
-        }
-
-        .submit{
-            margin-bottom: 8px;
-        }
-    
-        .card_radio_button{
-            padding-top: 5px;
-            margin-bottom: 5px;
-        }
-}
-
-@media (min-width: 768px){
-    #menu-icon{
-    display: none;
+    .testimonios{
+        text-align: center;
     }
-}
 
-@media (max-width: 1100px){
+    .contactCardLegend{
+        font-size: 2.0vw;
+    }
+
+    .contactCardSub{
+        font-size: 1.0vw;
+    }
+
+    .contactCardContainer {
+        width: 100%;
+    }
+    
+    .contactCard{
+        padding: 0.5px;
+        height: 300px;
+    }
+
+    .inputsContainer {
+        flex-wrap: wrap;
+        height: 300px;
+        justify-content: space-evenly;
+    }
+
+    .inputsContainer textarea {
+        height: 75px;
+    }
+
+    .submit{
+        margin-bottom: 8px;
+    }
+
+    .card_radio_button{
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+
+
     .heroContainer p {
         font-size: 3vw;
         width: 700px;
@@ -671,7 +661,6 @@ label {
 
     .RedesSocialesContainer {
         display: flex;
-
     }
 
     .card {
@@ -695,56 +684,50 @@ label {
         margin-top: 10px;
         margin-bottom: 20px;
     }
-    .contactCard p:nth-child(1), .contactCard p:nth-child(2){
-        font-size: 3.5vw;
-    }
+
 
     .card_radio_button{
         padding-top: 5px;
         margin-bottom: 5px;
-    }
-    .inputsContainer{
-        height: 300px;
     }
 
     .inputpadron{
         width: 27vw;
     }
 }
-    /*Half queries*/
-@media (min-width: 768px) {
-    #menu-icon {
-        display: none;
+
+@media (min-width: 768px){
+    #menu-icon{
+    display: none;
     }
 }
-
 
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%
     }
 
-.aboutContainer p {
-    font-size: 16px;
-}
+    .aboutContainer p {
+        font-size: 16px;
+    }
 
-.heroContainer {
-    padding-left: 150px;
-}
+    .heroContainer {
+        padding-left: 150px;
+    }
 
 
-.heroContainer img {
-    width: auto
-}
+    .heroContainer img {
+        width: auto
+    }
 
-.aboutContainer img {
-    height: 250px;
-    width: auto;
-    margin: 0;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    .aboutContainer img {
+        height: 250px;
+        width: auto;
+        margin: 0;
+        border-radius: 10px;
+        margin-bottom: 20px;
 
-}
+    }
 }
 
 @media(min-width: 712px) {
@@ -855,6 +838,7 @@ label {
 
     .servicios{
         height: 1000px;
+        padding: 80px  20px;
     }
 
     .card{
@@ -862,7 +846,7 @@ label {
         margin: 0 1vw 30px;
     }
         .card p{
-            font-size: 1.2vw;
+            font-size: 1.4vw;
             margin-top: 20px;
             padding: 0 15px;
         }
@@ -905,11 +889,6 @@ label {
     }
 }
 
-    }
-
-    /* sections {
-        padding: 10rem 3% 2rem
-    } */
 
 @media (max-width: 768px) {
     #menu-icon {
@@ -1002,6 +981,7 @@ label {
 
     .resultados p {
         font-size: 3vw;
+        width: 23vw;
     }
 
     .resultado {
@@ -1073,7 +1053,8 @@ label {
     .testimonio {
         display: none;
         animation: fadeInLeft 2s ease forwards;
-        line-height: 2;
+        line-height: 1.5;
+        font-size: 2.4vw;
     }
 
     .testimonio.active {
