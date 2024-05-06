@@ -444,8 +444,6 @@ form label, form legend {
     margin-right: 35px;
 }
 
-
-
 .checkbox {
     margin: 20px 0;
 }
@@ -549,8 +547,7 @@ label {
 
 
 /* Large  and extra large devices */
-@media only screen and (min-width: 1200px) 
-{
+@media only screen and (min-width: 1200px) {
         .cardContainer {
             display: flex;
             justify-content: space-between;
@@ -696,40 +693,6 @@ label {
     }
 }
 
-@media (min-width: 768px){
-    #menu-icon{
-    display: none;
-    }
-}
-
-@media (max-width: 991px) {
-    .header {
-        padding: 2rem 3%
-    }
-
-    .aboutContainer p {
-        font-size: 16px;
-    }
-
-    .heroContainer {
-        padding-left: 150px;
-    }
-
-
-    .heroContainer img {
-        width: auto
-    }
-
-    .aboutContainer img {
-        height: 250px;
-        width: auto;
-        margin: 0;
-        border-radius: 10px;
-        margin-bottom: 20px;
-
-    }
-}
-
 @media(min-width: 712px) {
     .aboutContainer img {
         height: 300px;
@@ -746,6 +709,7 @@ label {
     }
 
 }
+
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%
@@ -808,7 +772,62 @@ label {
     .submit{
         margin-right: 8.5vw;
     }
+
+    .aboutContainer p {
+        font-size: 16px;
+    }
+
+    .heroContainer {
+        padding-left: 150px;
+    }
+
+
+    .heroContainer img {
+        width: auto
+    }
+
+    .aboutContainer img {
+        height: 250px;
+        width: auto;
+        margin: 0;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+    }
 }
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: #151715;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        text-align: center;
+    }
+
+}
+
+
+
 
 @media (max-width:1000px){
     h3{
@@ -887,37 +906,6 @@ label {
         font-size: 1.4vw;
         padding: 0 2.02vw;
     }
-}
-
-
-@media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background-color: #151715;
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    }
-
-    .navbar.active {
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        text-align: center;
-    }
-
 }
 
 @media (max-width: 650px) {
