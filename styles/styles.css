@@ -600,6 +600,7 @@ label {
 }
 
 @media (min-width: 651px) {
+    
 
     .heroContainer p {
         font-size: 18px;
@@ -607,6 +608,7 @@ label {
 
     .aboutContainer {
         flex-direction: column;
+        
     }
 
     .aboutContainer p {
@@ -615,6 +617,7 @@ label {
 
     .heroContainer {
         padding-left: 150px;
+        background-size: auto;
     }
 
     .heroContainer img {
@@ -647,9 +650,6 @@ label {
     }
 
 }
-
-
-
 
 @media (max-width: 991px) {
     .header {
