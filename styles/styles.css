@@ -2,6 +2,15 @@
     --ascent-color: #C4FF3D;
     --background-color: #424441;
     --color-secondary: #202020;
+    --font-color:#f3f3f3;
+    
+    --primary-c: #2196F3;
+	--secondary-c: #B2D7F5;
+	
+	--white: #FDFBFB;
+	
+	--text: #082943;	
+	--bg: var(--primary-c);
     --font-color: #f3f3f3;
 }
 
@@ -111,7 +120,7 @@ h3 {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    width: 465px;
+    width: 40vw;
 }
 
 .linea,
@@ -154,6 +163,7 @@ h3 {
     background: url("/sources/heroBackg.png"),
         linear-gradient(90deg, #C0FD3D 0%, #151614 101.15%);
     background-size: 100%;
+    background-repeat: round;
     padding-top: 245px;
     padding-left: 245px;
 }
@@ -244,6 +254,7 @@ h3 {
     height: 1100px;
     background-image: url("/sources/serviciosBckg.png");
     background-size: 100% auto;
+    padding: 6.7vw;
     padding: 80px;
 }
 
@@ -262,23 +273,20 @@ h3 {
     border-radius: 5px;
     text-align: center;
 }
-
-.card img {
-    margin-top: 28px;
-}
-
-.card h5 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 22px;
-    margin-top: 20px;
-}
-
-.card p {
-    font-size: 25px;
-    margin-top: 37px;
-    padding: 0 15px;
-}
+    .card img{
+        margin-top: 25px;
+    }
+    .card h5{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .card p{
+        font-size: 1vw;
+        margin-top: 10px;
+        padding: 0 15px;
+    }
 
 .card-white {
     background-color: #f3f3f3;
@@ -304,10 +312,15 @@ h3 {
     padding: 0 100px;
 }
 
-.testimonio {
-    font-size: 18px;
-    padding: 0 40px;
+.testimonio{
+        font-size: 1.4vw;
+        padding: 0 4.02vw;
 }
+    .testimonio {
+        font-size: 18px;
+        padding: 0 40px;
+    }
+
 
 .testimonio span {
     color: var(--ascent-color);
@@ -333,19 +346,32 @@ h3 {
     padding-right: 38px;
     padding-top: 63px;
 }
+    .contactCardLegend{
+        font-size: 2.5vw;
+    }
+    .contactCardSub{
+        font-size: 1.3vw;
+    }
+
+    .contactCard p{
+        margin-bottom: 20px;
+    }
+    /* .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+        font-size: 5.7vw;
+    } */
 
 .contactCard p {
     margin-bottom: 20px;
 }
 
-.contactCard p:nth-child(1),
+/* .contactCard p:nth-child(1),
 .contactCard p:nth-child(2) {
     font-size: 40px;
 }
 
 .contactCard p:nth-child(2) {
     font-size: 20px;
-}
+} */
 
 .contactCard span {
     color: var(--ascent-color);
@@ -373,20 +399,32 @@ h3 {
     margin-left: 7.5vw;
 }
 
-.inputsContainer textarea {
-    width: 50vw;
-    height: 95px;
-    resize: none;
-}
+    .card_radio_button{
+        display: flex;
+        flex-direction: column;	
+        font-size: 18px;
+        background: #0f0f0f;
+        color: white;
+        width: 400px;
+        padding: 10px 25px;
+        margin-left: 7.5vw;
+        border-radius: 10px;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.13);
+    }
 
-.fieldTest {
-    display: block;
-    flex-direction: row;
-    margin-left: 7.5vw;
-}
+    .card_radio_button ul{
+        list-style-type: none;
+        padding-left: 50px;
+        margin: 0;
+    }
 
-form label,
-form legend {
+    .card_radio_button li{
+        display: block;
+        position: relative;
+    }
+
+form label, form legend {
+
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -405,8 +443,6 @@ form legend {
     background-color: transparent;
     margin-right: 35px;
 }
-
-
 
 .checkbox {
     margin: 20px 0;
@@ -494,9 +530,14 @@ label {
     font-size: 20px;
     font-weight: 600;
 }
-
+.redesSociales{
+    h2{
+        text-align: center;
+    }
+}
 .RedesSocialesContainer {
     display: flex;
+    justify-content: space-between;
 }
 
 .copyright {
@@ -509,15 +550,54 @@ label {
     display: flex;
 }
 
+.RedesSocialesContainer .icon {
+    margin-top: 10px;
+    color: white;
+    flex: 1;
+    margin-right: 15px;
+}
+.RedesSocialesContainer a {
+    display: inline-block;
+    margin-right: 15px;
+}
 
 /* Large  and extra large devices */
 @media only screen and (min-width: 1200px) {
-    .cardContainer {
-        display: flex;
-        justify-content: space-between;
-    }
-}
+        .cardContainer {
+            display: flex;
+            justify-content: space-between;
+            
+        }
 
+        .contactCard p{
+            margin-top: 20px;
+            margin-left: 1vh;
+            margin-bottom: 20px;
+        }
+        /* .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+            font-size: 3.7vw;
+        } */
+
+        .inputsContainer {
+            flex-wrap: wrap;
+            height: 300px;
+            justify-content: space-evenly;
+        }
+        .inputsContainer textarea {
+            height: 95px;
+        }
+
+        .submit{
+            margin-bottom: 25px;
+        }
+    
+        .card_radio_button{
+            padding-top: 10px;
+            margin-top: 40px;
+            margin-bottom: 5px;
+        }
+
+}
 
 @media only screen and (min-width: 1100px) {
     .aboutContainer {
@@ -543,37 +623,56 @@ label {
         justify-content: space-evenly;
     }
 
-    .card p {
-        font-size: 13px;
-        margin-top: 37px;
-        padding: 0px 10px 10px 10px;
-    }
-
-    .testimonios {
+    .testimonios{
         text-align: center;
     }
 
-    .contactCard {
-        text-align: center;
+    .contactCardLegend{
+        font-size: 2.0vw;
+    }
+
+    .contactCardSub{
+        font-size: 1.0vw;
+    }
+
+    .contactCardContainer {
+        width: 100%;
+    }
+    
+    .contactCard{
+        padding: 0.5px;
+        height: 300px;
     }
 
     .inputsContainer {
         flex-wrap: wrap;
+        height: 300px;
         justify-content: space-evenly;
     }
 
     .inputsContainer textarea {
-        height: 95px;
+        height: 75px;
     }
 
+    .submit{
+        margin-bottom: 8px;
+    }
+
+    .card_radio_button{
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+
+
     .heroContainer p {
-        font-size: 45px;
+        font-size: 3vw;
         width: 700px;
     }
 
     .RedesSocialesContainer {
         display: flex;
-
     }
 
     .card {
@@ -589,45 +688,23 @@ label {
     html {
         font-size: 55%;
     }
-}
-
-
-/*Half queries*/
-@media (min-width: 768px) {
-    #menu-icon {
-        display: none;
-    }
-}
-
-@media (min-width: 651px) {
-
-    .heroContainer p {
-        font-size: 18px;
+    .submit{
+        margin-bottom: 10px;
     }
 
-    .aboutContainer {
-        flex-direction: column;
-    }
-
-    .aboutContainer p {
-        font-size: 16px;
-    }
-
-    .heroContainer {
-        padding-left: 150px;
-    }
-
-    .heroContainer img {
-        width: auto
-    }
-
-    .aboutContainer img {
-        height: 250px;
-        width: auto;
-        margin: 0;
-        border-radius: 10px;
+    .contactCard p{
+        margin-top: 10px;
         margin-bottom: 20px;
+    }
 
+
+    .card_radio_button{
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .inputpadron{
+        width: 27vw;
     }
 }
 
@@ -647,19 +724,101 @@ label {
     }
 
 }
-
-
-
+@media (min-width: 991px) {
+    #menu-icon {
+        display: none;
+    }
+    .navbar{
+        margin-left: auto;
+    }
+}
+    
 
 @media (max-width: 991px) {
-    .header {
-        padding: 2rem 3%
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: #151715;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        flex-direction: column;
+        align-items: flex-end;
     }
 
-    sections {
-        padding: 10rem 3% 2rem
+    #menu-icon {
+        margin-left: auto;
+    }
+    .navbar.active {
+        display: block;
     }
 
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        text-align: center;
+    }    
+    .contactCardContainer{
+        margin-left: 1px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .contactCard p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+    .contactCard p:nth-child(1), .contactCard p:nth-child(2){
+        font-size: 3.5vw;
+    }
+
+    .inputsContainer{
+        margin-left: 10px;
+    }
+
+    .card_radio_button{
+        display: flex;
+        flex-direction: column;	
+        font-size: 15px;
+        width: 320px;
+        padding: 10px 25px;
+        margin-left: 5.5vw;
+    }
+
+    .inputsContainer textarea {
+        height: 70px;
+    }
+
+    .submit{
+        margin-right: 8.5vw;
+    }
+
+    .aboutContainer p {
+        font-size: 16px;
+    }
+
+    .heroContainer {
+        padding-left: 150px;
+    }
+
+
+    .heroContainer img {
+        width: auto
+    }
+
+    .aboutContainer img {
+        height: 250px;
+        width: auto;
+        margin: 0;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+    }
 }
 
 @media (max-width: 768px) {
@@ -692,6 +851,88 @@ label {
 
 }
 
+
+
+
+@media (max-width:1000px){
+    h3{
+        font-size: 2.23vw;
+    }
+
+    .containerH3{
+        width: 50vw;
+        margin-bottom: 25px;
+    }
+
+    .resultados{
+        height: 200px;
+        padding: 50px 6vw;
+    }
+
+    .resultado img{
+        height: 70px;
+        width: 9vw;
+        margin-right: 2vw;
+    }
+
+    .separadorResultado{
+        width: 3px;
+        height: 70px;
+    }
+
+    .servicios{
+        height: 1000px;
+        padding: 80px  20px;
+    }
+
+    .card{
+        width: 37vw;
+        margin: 0 1vw 30px;
+    }
+        .card p{
+            font-size: 1.4vw;
+            margin-top: 20px;
+            padding: 0 15px;
+        }
+    
+    .inputsContainer{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .submit{
+        margin-bottom: 10px;
+    }
+
+    .card_radio_button{
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .inputpadron{
+        width: 45vw;
+    }
+
+    .inputsContainer textarea {
+        height: 70px;
+    }
+
+    .testimonios{
+        margin-top: 60px;
+    }
+    .testimoniosContainer{
+        height: 200px;
+        padding: 0 20px;
+    }
+
+    .testimonio{
+        font-size: 1.4vw;
+        padding: 0 2.02vw;
+    }
+}
+
 @media (max-width: 650px) {
     h3 {
         font-size: 3.1vw;
@@ -711,49 +952,49 @@ label {
         padding: 180px 10vw;
     }
 
-    .heroContainer img {
-        height: 70px;
+        .heroContainer img{
+            height: 70px;
+        }
+        .heroContainer p{
+            font-size: 3vw;
+            width: 100%;
+        }
+    
+    .heroName{
+        justify-content: start;
     }
 
-    .heroContainer p {
-        font-size: 3vw;
-        width: 100%;
+    .nosotros{
+        padding: 70px 0 0;
     }
 
-    .heroName {
-        justify-content: center;
-    }
-
-    .nosotros {
-        padding: 40px 0 0;
-    }
-
-    .aboutContainer {
-        display: block;
+    .aboutContainer{
+        flex-direction: column;
         padding: 0 10%;
     }
+        .aboutContainer img{
+            height: 250px;
+            width: 80%;
+            margin: 0;
+            border-radius: 10px;
+        }
+        .aboutContainer p{
+            font-size: 2.8vw;
+            margin-top: 20px;
+        }
 
-    .aboutContainer img {
-        height: 250px;
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-    }
+    .resultados{
+        height: 370px;
 
-    .aboutContainer p {
-        font-size: 2.8vw;
-        margin-top: 20px;
-    }
-
-    .resultados {
-        height: 400px;
         margin-top: 40px;
         display: block;
         padding: 0;
     }
 
+
     .resultados p {
         font-size: 3vw;
+        width: 23vw;
     }
 
     .resultado {
@@ -763,17 +1004,20 @@ label {
         width: 100%;
     }
 
-    .resultados .resultado:nth-child(3) {
-        background-color: #f5f4f4;
-    }
+        .resultado img{
+            margin-right: 0;
+         }
 
-    .separadorResultado {
-        display: none;
+    .separadorResultado{
+        width: 500px;
+        height: 3px;
+        margin: 0 auto;
+
     }
 
     .servicios {
         background: none;
-        padding: 40px 0 0;
+        padding: 70px 0 0;
         height: 1400px;
     }
 
@@ -798,8 +1042,15 @@ label {
     .card:nth-child(4) {
         order: 3;
     }
+        .card p{
+            font-size: 2.5vw;
+            margin-top: 20px;
+            padding: 0 15px;
+        }
 
-    .testimonios {
+
+    .testimonios{
+        padding: 70px 0 0;
         margin-top: 0;
         /* padding-top: 40px; */
     }
@@ -811,17 +1062,56 @@ label {
         padding: 0;
     }
 
+
     .testimonio {
         display: none;
         animation: fadeInLeft 2s ease forwards;
-        line-height: 2;
+        line-height: 1.5;
+        font-size: 2.4vw;
     }
 
     .testimonio.active {
         display: block;
     }
 
-    .footerContainer {
+
+    .contacto{
+        padding: 80px 4vw 0;
+        height: 800px;
+    }
+
+    .contactCardContainer{
+        flex-direction: column;
+    }
+
+    .contactCard{
+        background-color: #0f0f0f;
+        height: 260px;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        border-radius: 10px;
+    }
+
+    .inputpadron{
+        width: 70vw;
+    }
+
+    .inputsContainer textarea{
+        width: 70vw;
+    }
+
+    .phoneContainer{
+        justify-content: center;
+    }
+
+
+    .card_radio_button{
+        display: none;
+    }
+
+    .footerContainer{
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -845,7 +1135,8 @@ label {
         margin-top: 20px;
     }
 
-    .footerMail {
+    .footerMail{
+
         margin-top: 10px;
     }
 }

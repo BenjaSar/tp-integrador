@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
-
     <title>Innovatech Solutions</title>
+    <link rel="icon" href="doc/imgs/logowhite-2.png" type="image/png">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -26,7 +24,6 @@
             <li><a href="#" id="nombre-empresa"> <img id="logo-header" src="/doc/imgs/logowhite.png" alt="logo"></a>
             </li>
             <li>
-
                 <p>Innovatech Solution
                 <p></p>
             </li>
@@ -57,7 +54,6 @@
     </section>
 
     <section class="nosotros" id="nosotros">
-
         <div class="containerH3">
             <div class="linea"></div>
             <h3>NOSOTROS</h3>
@@ -206,10 +202,10 @@
 
         <div class="contactCardContainer">
             <div class="contactCard">
-                <p>Cuentános sobre
+                <p class="contactCardLegend">Cuentános sobre
                     <span>TUS</span> necesidades
                 </p>
-                <p>Un especialista a su disposición</p>
+                <p class="contactCardSub">Un especialista a su disposición</p>
                 <div class="phoneContainer">
                     <img src="/sources/phone.png" alt="iconPhone">
                     <p>(+54)911-4455-6677</p>
@@ -235,55 +231,46 @@
                             <label for="mensaje">Mensaje:</label>
                             <textarea cols="70" row="10" id="mensaje" class="inputpadron" required></textarea>
                         </div>
+                        
                     </div>
                     <input class="submit" type="submit" value="ENVIAR" id="enviar">
+
+                </form>  
+            
+                <div class=card_radio_button>
                 </form>
 
                 <div class="fieldTest">
                     <fieldset>
                         <legend>¿Cómo te gustaría que te contactáramos?</legend>
-
-                        <label for="radioemail">
-                            <input type="radio" name="contacto" value="email" id="radioemail">
-                            Email
-                        </label>
-
-                        <label for="radiotelefono">
-                            <input type="radio" name="contacto" value="telefono" id="radiotelefono">
-                            Teléfono
-                        </label>
-
-                        <label for="radiowhatsapp">
-                            <input type="radio" name="contacto" value="Whatsapp" id="radiowhatsapp" checked>
-                            WhatsApp
-                        </label>
-                    </fieldset>
-                    <!--
-                    <fieldset>
-                        <label class="checkbox">
-                            <input type="checkbox" checked>
-                            ¿Le gustaría recibir novedades de la consultora Innovatech?
-                        </label>
-                    </fieldset> -->
-
-                    <fieldset>
-                        <legend>¿En cuál horario prefiere ser atendido?</legend>
-                        <select>
-                            <option>Mañana</option>
-                            <option>Tarde</option>
-                            <option>Noche</option>
-                        </select>
-                    </fieldset>
-                </div>
+                        <ul>
+                            <li>
+                                <label for="radioemail">
+                                    <input type="radio" name="contacto" value="email" id="radioemail">
+                                    Email
+                                </label>
+                            </li>
+                            <li><label for="radiotelefono">
+                                <input type="radio" name="contacto" value="telefono" id="radiotelefono">
+                                Teléfono
+                            </label></li>
+                            <li>
+                                <label for="radiowhatsapp">
+                                    <input type="radio" name="contacto" value="Whatsapp" id="radiowhatsapp" checked>
+                                    WhatsApp
+                                </label>
+                            </li>
+                        </ul>
             </div>
-
-
+        </div>
         </div>
     </section>
 
+
+
     <footer class="footerContainer">
         <div class="nameFooter">
-            <img src="/doc/imgs/logowhite.png" alt="logo">
+            <img src="/doc/imgs/logowhite-2.png" alt="logo">
             <p>Innovatech Solutions</p>
         </div>
 
@@ -310,35 +297,35 @@
                 <a href="#">
                     <div class="section facebook" tooltip="Facebook">
                         <div class="icon">
-                            <i class="fab fa-facebook-f fa-lg"></i>
+                            <i class="fab fa-facebook-f fa-xl"></i>
                         </div>
                     </div>
                 </a>
                 <a href="#">
                     <div class="section instagram" tooltip="Instagram">
                         <div class="icon">
-                            <i class="fab fa-instagram fa-lg"></i>
+                            <i class="fab fa-instagram fa-xl"></i>
                         </div>
                     </div>
                 </a>
                 <a href="#">
                     <div class="section youtube" tooltip="Youtube">
                         <div class="icon">
-                            <i class="fab fa-youtube fa-lg"></i>
+                            <i class="fab fa-youtube fa-xl"></i>
                         </div>
                     </div>
                 </a>
                 <a href="#">
                     <div class="section twitter" tooltip="Twitter">
                         <div class="icon">
-                            <i class="fab fa-twitter fa-lg"></i>
+                            <i class="fab fa-twitter fa-xl"></i>
                         </div>
                     </div>
                 </a>
                 <a href="#">
                     <div class="section github" tooltip="Github">
                         <div class="icon">
-                            <i class="fab fa-github fa-lg"></i>
+                            <i class="fab fa-github fa-xl"></i>
                         </div>
                     </div>
                 </a>
