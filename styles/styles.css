@@ -531,9 +531,14 @@ label {
     font-size: 20px;
     font-weight: 600;
 }
-
+.redesSociales{
+    h2{
+        text-align: center;
+    }
+}
 .RedesSocialesContainer {
     display: flex;
+    justify-content: space-between;
 }
 
 .copyright {
@@ -546,6 +551,16 @@ label {
     display: flex;
 }
 
+.RedesSocialesContainer .icon {
+    margin-top: 10px;
+    color: white;
+    flex: 1;
+    margin-right: 15px;
+}
+.RedesSocialesContainer a {
+    display: inline-block;
+    margin-right: 15px;
+}
 
 /* Large  and extra large devices */
 @media only screen and (min-width: 1200px) {
@@ -710,12 +725,17 @@ label {
     }
 
 }
+@media (min-width: 991px) {
+    #menu-icon {
+        display: none;
+    }
+    .navbar{
+        margin-left: auto;
+    }
+}
+    
 
 @media (max-width: 991px) {
-    .header {
-        padding: 2rem 3%
-    }
-
     .navbar {
         display: none;
         position: absolute;
@@ -726,8 +746,13 @@ label {
         background-color: #151715;
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        flex-direction: column;
+        align-items: flex-end;
     }
 
+    #menu-icon {
+        margin-left: auto;
+    }
     .navbar.active {
         display: block;
     }
