@@ -164,8 +164,8 @@ h3 {
         linear-gradient(90deg, #C0FD3D 0%, #151614 101.15%);
     background-size: 100%;
     background-repeat: round;
-    padding-top: 245px;
-    padding-left: 245px;
+    padding-top: 260px;
+    padding-left: 60px;
 }
 
 .heroContainer img {
@@ -175,7 +175,7 @@ h3 {
 }
 
 .heroContainer p {
-    font-size: 2.5vw;
+        font-size: 30px;
     width: 750px;
 }
 
@@ -202,6 +202,7 @@ h3 {
 .aboutContainer {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .aboutContainer img {
@@ -666,8 +667,8 @@ label {
     }
 
     .heroContainer p {
-        font-size: 3vw;
-        width: 700px;
+        font-size: 30px;
+        width: 500px;
     }
 
     .RedesSocialesContainer {
