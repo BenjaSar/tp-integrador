@@ -433,7 +433,8 @@ form label, form legend {
 }
 
 .inputpadron {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0 0 20px;
     padding: 10px 15px;
     width: 23.8vw;
@@ -441,7 +442,7 @@ form label, form legend {
     border-radius: 5px;
     border: 2px solid #fff;
     background-color: transparent;
-    margin-right: 35px;
+    /*margin-right: 35px;*/
 }
 
 .checkbox {
@@ -724,6 +725,7 @@ label {
     }
 
 }
+
 @media (min-width: 991px) {
     #menu-icon {
         display: none;
@@ -731,6 +733,46 @@ label {
     .navbar{
         margin-left: auto;
     }
+
+    .inputpadron{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contactCardContainer{
+        margin-left: 1px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .contactCard p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+    .card_radio_button{
+        display: flex;
+        flex-direction: column;	
+        font-size: 15px;
+        width: 400px;
+        padding: 10px 25px;
+        margin-left: 16vw;
+    }
+
+    .inputsContainer textarea {
+        height: 60px;
+    }
+
+    .submit{
+        margin-right: 4vw;
+        margin-top: 1px;
+        margin-left: 8vw;
+    }
+
+
+
 }
     
 
@@ -778,6 +820,11 @@ label {
         font-size: 3.5vw;
     }
 
+    .inputpadron{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+    }
 
     .inputsContainer{
         margin-left: 70px;
@@ -896,6 +943,12 @@ label {
             font-size: 1.4vw;
             margin-top: 20px;
             padding: 0 15px;
+        }
+
+        .inputpadron{
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
         }
     
     .inputsContainer{
