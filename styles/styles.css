@@ -451,7 +451,6 @@ form label, form legend {
 }
 
 .submit {
-    /* margin: 20px 0 0; */
     width: 195px;
     height: 38px;
     padding: 2px 16px;
@@ -459,7 +458,7 @@ form label, form legend {
     color: #202020;
     background: greenyellow;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: 2s all;
     cursor: pointer;
     text-align: center;
@@ -726,7 +725,6 @@ label {
     }
 
 }
-
 @media (min-width: 991px) {
     #menu-icon {
         display: none;
@@ -767,9 +765,8 @@ label {
     }
 
     .submit{
-        margin-right: 4vw;
-        margin-top: 1px;
-        margin-left: 8vw;
+        margin: 1px 8px 8px 8vw;
+
     }
 
 
@@ -828,16 +825,16 @@ label {
     }
 
     .inputsContainer{
-        margin-left: 70px;
+        margin-left: 50px;
     }
 
     .card_radio_button{
         display: flex;
         flex-direction: column;	
         font-size: 15px;
-        width: 400px;
+        width: 300px;
         padding: 10px 25px;
-        margin-left: 6vw;
+        margin-left: 8vw;
     }
 
     .inputsContainer textarea {
@@ -845,8 +842,9 @@ label {
     }
 
     .submit{
-        margin-right: 4vw;
-        margin-top: 1.5px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
     }
 
     .aboutContainer p {
@@ -900,6 +898,25 @@ label {
         text-align: center;
     }
 
+    .inputpadron{
+        width: 70%;
+        margin: 0 0 20px -25px;
+    }
+
+    .submit{
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    .card_radio_button{
+        width: 85%;
+        margin-left: 55px;
+    }
+
+    ul{
+        font-size: 10px;
+    }
+
 }
 
 
@@ -912,7 +929,7 @@ label {
 
     .containerH3{
         width: 50vw;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     .resultados{
@@ -956,7 +973,7 @@ label {
         margin-top: 15px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .submit{
@@ -1155,6 +1172,7 @@ label {
 
     .inputpadron{
         width: 90vw;
+        margin-left: 1%;
     }
 
     .inputsContainer textarea{
@@ -1170,7 +1188,7 @@ label {
         display: flex;
         flex-direction: column;
         margin-left: 5px;
-        width: 90%;
+        width: 100%;
     }
 
     .footerContainer{
