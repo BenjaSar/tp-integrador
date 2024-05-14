@@ -190,7 +190,7 @@ h3 {
     padding: 10px 15px;
     border: none;
     background-color: #c4ff3d;
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
 }
 
@@ -206,7 +206,7 @@ h3 {
 }
 
 .aboutContainer img {
-    height: 330px;
+    height: 370px;
     width: 40vw;
     margin: 0 80px;
     border-radius: 10px;
@@ -767,6 +767,8 @@ label {
     .submit{
         margin: 1px 8px 8px 8vw;
 
+    }.aboutContainer img {
+        margin: 0px 80px 20px 0px;
     }
 
 
