@@ -164,8 +164,8 @@ h3 {
         linear-gradient(90deg, #C0FD3D 0%, #151614 101.15%);
     background-size: 100%;
     background-repeat: round;
-    padding-top: 245px;
-    padding-left: 245px;
+    padding-top: 260px;
+    padding-left: 60px;
 }
 
 .heroContainer img {
@@ -175,7 +175,7 @@ h3 {
 }
 
 .heroContainer p {
-    font-size: 2.5vw;
+        font-size: 30px;
     width: 750px;
 }
 
@@ -190,7 +190,7 @@ h3 {
     padding: 10px 15px;
     border: none;
     background-color: #c4ff3d;
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
 }
 
@@ -202,10 +202,11 @@ h3 {
 .aboutContainer {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .aboutContainer img {
-    height: 330px;
+    height: 370px;
     width: 40vw;
     margin: 0 80px;
     border-radius: 10px;
@@ -396,7 +397,7 @@ h3 {
 
 .inputsContainer {
     display: block;
-    margin-left: 7.5vw;
+    margin-left: 15vw;
 }
 
     .card_radio_button{
@@ -433,7 +434,8 @@ form label, form legend {
 }
 
 .inputpadron {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0 0 20px;
     padding: 10px 15px;
     width: 23.8vw;
@@ -441,7 +443,7 @@ form label, form legend {
     border-radius: 5px;
     border: 2px solid #fff;
     background-color: transparent;
-    margin-right: 35px;
+    /*margin-right: 35px;*/
 }
 
 .checkbox {
@@ -449,7 +451,6 @@ form label, form legend {
 }
 
 .submit {
-    /* margin: 20px 0 0; */
     width: 195px;
     height: 38px;
     padding: 2px 16px;
@@ -457,12 +458,13 @@ form label, form legend {
     color: #202020;
     background: greenyellow;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: 2s all;
     cursor: pointer;
     text-align: center;
     float: right;
-    margin-right: 5vw;
+    margin-right: 3vw;
+    margin-top: 1.8vh;
 }
 
 .submit:hover {
@@ -584,16 +586,16 @@ label {
             justify-content: space-evenly;
         }
         .inputsContainer textarea {
-            height: 95px;
+            height: 70px;
         }
 
         .submit{
-            margin-bottom: 25px;
+            margin-bottom: 18px;
         }
     
         .card_radio_button{
             padding-top: 10px;
-            margin-top: 40px;
+            margin-top: 35px;
             margin-bottom: 5px;
         }
 
@@ -614,7 +616,7 @@ label {
 
     .aboutContainer img {
         height: 330px;
-        margin: 0px 80px 0px 0px;
+        margin: 0px 80px 20px 0px;
         border-radius: 10px;
     }
 
@@ -642,11 +644,11 @@ label {
     .contactCard{
         padding: 0.5px;
         height: 300px;
+        margin-left: 5%;
     }
-
     .inputsContainer {
-        flex-wrap: wrap;
-        height: 300px;
+        flex-wrap: flex;
+        height: 290px;
         justify-content: space-evenly;
     }
 
@@ -655,7 +657,7 @@ label {
     }
 
     .submit{
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     .card_radio_button{
@@ -663,12 +665,9 @@ label {
         margin-bottom: 5px;
     }
 
-
-
-
     .heroContainer p {
-        font-size: 3vw;
-        width: 700px;
+        font-size: 30px;
+        width: 500px;
     }
 
     .RedesSocialesContainer {
@@ -701,10 +700,12 @@ label {
     .card_radio_button{
         padding-top: 5px;
         margin-bottom: 5px;
+        margin-left: 25%;
+        width: 71%;
     }
 
     .inputpadron{
-        width: 27vw;
+        width: 40vw;
     }
 }
 
@@ -731,6 +732,47 @@ label {
     .navbar{
         margin-left: auto;
     }
+
+    .inputpadron{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contactCardContainer{
+        margin-left: 1px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .contactCard p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+    .card_radio_button{
+        display: flex;
+        flex-direction: column;	
+        font-size: 15px;
+        width: 400px;
+        padding: 10px 25px;
+        margin-left: 16vw;
+    }
+
+    .inputsContainer textarea {
+        height: 60px;
+    }
+
+    .submit{
+        margin: 1px 8px 8px 8vw;
+
+    }.aboutContainer img {
+        margin: 0px 80px 20px 0px;
+    }
+
+
+
 }
     
 
@@ -761,7 +803,8 @@ label {
         font-size: 2rem;
         margin: 3rem 0;
         text-align: center;
-    }    
+    }
+    
     .contactCardContainer{
         margin-left: 1px;
         display: flex;
@@ -777,25 +820,33 @@ label {
         font-size: 3.5vw;
     }
 
+    .inputpadron{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+    }
+
     .inputsContainer{
-        margin-left: 10px;
+        margin-left: 50px;
     }
 
     .card_radio_button{
         display: flex;
         flex-direction: column;	
         font-size: 15px;
-        width: 320px;
+        width: 300px;
         padding: 10px 25px;
-        margin-left: 5.5vw;
+        margin-left: 8vw;
     }
 
     .inputsContainer textarea {
-        height: 70px;
+        height: 60px;
     }
 
     .submit{
-        margin-right: 8.5vw;
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
     }
 
     .aboutContainer p {
@@ -849,6 +900,25 @@ label {
         text-align: center;
     }
 
+    .inputpadron{
+        width: 70%;
+        margin: 0 0 20px -25px;
+    }
+
+    .submit{
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    .card_radio_button{
+        width: 85%;
+        margin-left: 55px;
+    }
+
+    ul{
+        font-size: 10px;
+    }
+
 }
 
 
@@ -861,7 +931,7 @@ label {
 
     .containerH3{
         width: 50vw;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     .resultados{
@@ -894,12 +964,18 @@ label {
             margin-top: 20px;
             padding: 0 15px;
         }
+
+        .inputpadron{
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+        }
     
     .inputsContainer{
         margin-top: 15px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .submit{
@@ -912,11 +988,11 @@ label {
     }
 
     .inputpadron{
-        width: 45vw;
+        width: 40vw;
     }
 
     .inputsContainer textarea {
-        height: 70px;
+        height: 60px;
     }
 
     .testimonios{
@@ -1052,7 +1128,6 @@ label {
     .testimonios{
         padding: 70px 0 0;
         margin-top: 0;
-        /* padding-top: 40px; */
     }
 
     .testimoniosContainer {
@@ -1086,19 +1161,24 @@ label {
 
     .contactCard{
         background-color: #0f0f0f;
-        height: 260px;
+        height: 180px;
         width: 100%;
         text-align: center;
         padding-top: 40px;
         border-radius: 10px;
     }
 
+    .inputsContainer{
+        margin-left: 5px;
+    }
+
     .inputpadron{
-        width: 70vw;
+        width: 90vw;
+        margin-left: 1%;
     }
 
     .inputsContainer textarea{
-        width: 70vw;
+        width: 90vw;
     }
 
     .phoneContainer{
@@ -1107,7 +1187,10 @@ label {
 
 
     .card_radio_button{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        width: 100%;
     }
 
     .footerContainer{
@@ -1138,5 +1221,9 @@ label {
     .footerMail{
 
         margin-top: 10px;
+    }
+
+    .submit{
+        margin-right: 1%;
     }
 }
