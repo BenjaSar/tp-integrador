@@ -3,7 +3,7 @@
 Sabrina Lucero <br>
 Nicolas Mazzitello <br>
 Juan Camilo Monina <br>
-Fabian Sarmiento <br>
+FS <br>
 2024
 
 # Consulting software company
